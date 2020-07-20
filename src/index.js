@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom';
 import { ThemeProvider } from 'styled-components';
 import { PrimaryButton } from './components';
 import { GlobalStyle, darkTheme, defaultTheme } from "./utils"
+import { useMediaQuery } from './hooks';
 
 const App = () => {
   
   const [useDarkTheme, setUseDarkTheme] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  // If true, it's a mobile dimensions
+  const isMobile = useMediaQuery('(max-width: 1024px)');
   
   return (
     <ThemeProvider theme={useDarkTheme ? darkTheme: defaultTheme} >
@@ -20,7 +23,7 @@ const App = () => {
           alignItems: "center",
           justifyContent: "space-around"
       }}>
-        
+
       <PrimaryButton>Submit</PrimaryButton>
       </div>
       <GlobalStyle />
