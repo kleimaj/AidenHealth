@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
-import { ThemeProvider } from 'styled-components';
-
+import App from './components/App/App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
