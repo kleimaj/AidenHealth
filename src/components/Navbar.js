@@ -1,12 +1,25 @@
 import styled from 'styled-components';
-import { typeScale } from "../utils";
+// import { typeScale } from "../utils";
 import { applyStyleModifiers } from "styled-components-modifiers";
 
 const NAVBAR_MODIFIERS = {
     mobile:() => `
-    width: 80%;
-    padding: 8px;
-`,
+    width: 40%;
+    position: relative;
+
+    span {
+        padding-right: 0px;
+    }
+    span::before {
+        transform: translateX(-14px);
+    }
+    span::after {
+        transform: translateX(-14px);
+    }
+    `,
+    docs:() => `
+    position: relative;
+    `
 }
 
 export const Navbar = styled.nav`
