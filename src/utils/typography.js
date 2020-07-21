@@ -1,4 +1,5 @@
 export const primaryFont = '"Work Sans", sans-serif';
+export const displayFont = '"DM Serif Display", serif';
 
 export const typeScale = {
     header1: "3.0519rem",

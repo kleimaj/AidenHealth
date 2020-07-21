@@ -9,18 +9,20 @@ const HeaderWrapper = styled.header`
 // Contains image
     background-color: #ffffff;
     width: 100vw;
+    padding: 0 123px;
 `;
 
 const CallToAction = styled.h1`
     font-size: ${typeScale.header1};
-    color: ${props => props.theme.primaryColor};
+    color: ${props => props.theme.textColorOnPrimary};
     width: 895px;
 `
 const Subheader = styled.p`
     font-size: ${typeScale.paragraph};
-    color: ${props => props.theme.primaryColor};
-    width: 576px;
+    color: ${props => props.theme.textColorOnPrimary};
+    width: 370px;
     line-height: 45px;
+    margin-bottom: 30px;
 `
 
 export const Header = () => {
