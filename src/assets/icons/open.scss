@@ -1,0 +1,13 @@
+
+    .open {
+        transform: rotate(765deg);
+        background: transparent;
+
+        &::before {
+            transform: rotate(-90deg) translate(-8px, 0px);
+        }
+        &::after {
+            width: 28px;
+            transform: rotate(-90deg) translate((5px, 4px));
+        }
+    }

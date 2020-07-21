@@ -13,7 +13,7 @@ const App = () => {
   const [showMenu, setShowMenu] = useState(false);
   // If true, it's a mobile dimensions
   const isMobile = useMediaQuery('(max-width: 1024px)');
-  
+  console.log(showMenu)
   return (
     <ThemeProvider theme={useDarkTheme ? darkTheme: defaultTheme} >
     <div 
@@ -29,7 +29,10 @@ const App = () => {
       <Navbar>
         <h1><a href="#">Logo</a></h1>
         {isMobile ? (
-          <HamburgerIcon />
+          <HamburgerIcon 
+            onClick={() => setShowMenu(!showMenu)} 
+            open={showMenu}
+          />
         )
         : (
         <ul>
