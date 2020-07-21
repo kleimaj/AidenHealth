@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import { ThemeProvider } from 'styled-components';
-import { PrimaryButton } from './components';
+import { Navbar, PrimaryButton, SecondaryButton, TertiaryButton } from './components';
 import { GlobalStyle, darkTheme, defaultTheme } from "./utils"
 import { useMediaQuery } from './hooks';
 
@@ -21,9 +21,27 @@ const App = () => {
           height: "100vh",
           display: "flex",
           alignItems: "center",
-          justifyContent: "space-around"
+          justifyContent: "space-around",
+          flexDirection: "column"
       }}>
-
+      <Navbar>
+        <h1><a href="#">Logo</a></h1>
+        <ul>
+          <li><a><TertiaryButton modifiers="navTertiary">
+            How It Works
+            </TertiaryButton></a></li>
+            <li><a><TertiaryButton modifiers="navTertiary">
+            Solutions
+            </TertiaryButton></a></li>
+            <li><a><TertiaryButton modifiers="navTertiary">
+            About Us
+            </TertiaryButton></a></li>
+          <li><a><SecondaryButton modifiers="navSecondary">
+              Apply Today
+            </SecondaryButton></a></li>
+        </ul>
+      </Navbar>
+      
       <PrimaryButton>Submit</PrimaryButton>
       </div>
       <GlobalStyle />
