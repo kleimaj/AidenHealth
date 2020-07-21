@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useSpring, animated, config } from 'react-spring';
+import { useSpring, animated } from 'react-spring';
 import { SecondaryButton, TertiaryButton } from './Buttons';
 
 const DropdownWrapper = styled.div`
-    // height: calc(100vh - 65px);
-    height: calc(100vh - 250px);
+    // height: calc(100vh - 85px);
+    // height: calc(100vh - 250px);
     background-color: ${props => props.theme.primaryColorDarker};
     color: ${props => props.theme.textColorOnDark};
     display: flex;
@@ -22,8 +22,14 @@ const DropdownWrapper = styled.div`
     z-index: 1;
     position: relative;
     left: 0;
-    margin-top: 30px;
+    margin-top: -5px;
     width: 100vw;
+
+    // Storybook settings
+    @media only screen and (max-width: 1200px) {
+        width: 320px;
+        margin: 0 auto;
+      }
 
     ul {
         margin-top: 25px;
@@ -59,7 +65,7 @@ export const Dropdown = ({ showMenu, setShowMenu }) => {
               margin: '15px',
               position: 'relative',
               bottom: '0'
-          }}><a><SecondaryButton modifiers="navSecondary">
+          }}><a><SecondaryButton modifiers={["navSecondary"]}>
               Apply Today
             </SecondaryButton></a></li>
             </ul>

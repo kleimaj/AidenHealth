@@ -1,0 +1,26 @@
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
+import { withKnobs, boolean } from "@storybook/addon-knobs";
+import { Navbar } from "./Navbar";
+import { Dropdown } from "./Dropdown";
+import { SecondaryButton, TertiaryButton } from "./Buttons";
+
+<Meta title="Design System|Dropdown"/>
+
+# Dropdown Menu
+
+Navigation Bars are a section of an interface intended to aid visitors in accessing information, or different parts of the application.
+A Dropdown Menu is a user interface element, similar to a list box, that allows users to choose one value from a list.
+
+## Usage
+
+Use navigation bars to offer different options to the user's specific needs.
+
+## Mobile Dropdown Menu
+
+The Mobile Dropdown Menu is used to substitute the `Navbar` for a friendlier mobile view. This component is used along with the `Mobile Navbar`.
+
+<Preview withToolbar>
+  <Story name="Mobile Dropdown Menu">
+    <Dropdown showMenu={boolean("Show Menu", true)}  />
+  </Story>
+</Preview>
