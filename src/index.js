@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import { ThemeProvider } from 'styled-components';
-import { Navbar, PrimaryButton, SecondaryButton, TertiaryButton } from './components';
+import { Navbar, Dropdown, PrimaryButton, SecondaryButton, TertiaryButton } from './components';
 import { HamburgerIcon } from './assets';
 import { GlobalStyle, darkTheme, defaultTheme } from "./utils"
 import { useMediaQuery } from './hooks';
@@ -51,7 +51,7 @@ const App = () => {
         </ul>
         )}
       </Navbar>
-      
+      <Dropdown showMenu={showMenu} setShowMenu={setShowMenu} />
       <PrimaryButton>Submit</PrimaryButton>
       </div>
       <GlobalStyle />
