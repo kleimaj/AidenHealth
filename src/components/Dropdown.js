@@ -4,21 +4,39 @@ import { useSpring, animated, config } from 'react-spring';
 import { SecondaryButton, TertiaryButton } from './Buttons';
 
 const DropdownWrapper = styled.div`
-    height: calc(100vh - 80px);
+    // height: calc(100vh - 65px);
+    height: calc(100vh - 250px);
     background-color: ${props => props.theme.primaryColorDarker};
     color: ${props => props.theme.textColorOnDark};
     display: flex;
     justify-content: space-between;
-    z-index: -1;
-    margin-top: 110px;
+
+    border-radius: 0 0 5px 5px;
+
+    // left: 0;
+    // overflow: scroll;
+    // position: absolute;
+    // top: 80px;
+    // width: 100%;
+
+    z-index: 1;
+    position: relative;
+    left: 0;
+    margin-top: 30px;
     width: 100vw;
+
+    ul {
+        margin-top: 25px;
+    }
+    li {
+        padding: 15px 0;
+    }
 `
 
 export const Dropdown = ({ showMenu, setShowMenu }) => {
     const animation = useSpring({
         opacity: showMenu ? 1: 0,
-        transform: showMenu ? `translateY(0)` : `translateY(-200%)`,
-        config: config.stiff
+        transform: showMenu ? `translateY(0)` : `translateY(-200%)`
     });
     return (
         <animated.div style={animation}>
@@ -37,7 +55,11 @@ export const Dropdown = ({ showMenu, setShowMenu }) => {
             <li><a><TertiaryButton modifiers="navTertiary">
             About Us
             </TertiaryButton></a></li>
-          <li><a><SecondaryButton modifiers="navSecondary">
+          <li style={{
+              margin: '15px',
+              position: 'relative',
+              bottom: '0'
+          }}><a><SecondaryButton modifiers="navSecondary">
               Apply Today
             </SecondaryButton></a></li>
             </ul>
