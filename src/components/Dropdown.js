@@ -26,7 +26,7 @@ const DropdownWrapper = styled.div`
     width: 100vw;
 
     // Storybook settings
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (min-width: 1000px) {
         width: 320px;
         margin: 0 auto;
       }

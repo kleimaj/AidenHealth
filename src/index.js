@@ -13,7 +13,7 @@ const App = () => {
   const [showMenu, setShowMenu] = useState(false);
   // If true, it's a mobile dimensions
   const isMobile = useMediaQuery('(max-width: 1024px)');
-  console.log(showMenu)
+
   return (
     <ThemeProvider theme={useDarkTheme ? darkTheme: defaultTheme} >
     <div 
@@ -51,7 +51,12 @@ const App = () => {
         </ul>
         )}
       </Navbar>
+      {isMobile ? (
       <Dropdown showMenu={showMenu} setShowMenu={setShowMenu} />
+      ):
+      (
+        null
+      )}
       <PrimaryButton>Submit</PrimaryButton>
       </div>
       <GlobalStyle />
