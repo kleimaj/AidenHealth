@@ -9,6 +9,9 @@ const DropdownWrapper = styled.div`
     color: ${props => props.theme.textColorOnDark};
     display: flex;
     justify-content: space-between;
+    z-index: -1;
+    margin-top: 110px;
+    width: 100vw;
 `
 
 export const Dropdown = ({ showMenu, setShowMenu }) => {

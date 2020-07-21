@@ -36,6 +36,7 @@ export const Navbar = styled.nav`
     position: fixed;
     top: 0;
     justify-content: space-between;
+    z-index: 1;
 
     h1 {
         margin: 0;
