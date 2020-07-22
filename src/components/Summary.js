@@ -9,9 +9,15 @@ const SummaryWrapper = styled.article`
     flex-wrap: wrap;
     position: relative;
     width: 100vw;
-    align-items: center;
-    margin: 0 auto;
-    // left: 300px;
+    padding: 0px 150px;
+
+    @media only screen and (max-width: 1024px) {
+        position: relative;
+        padding: 25px;
+    }
+    @media only screen and (min-width: 1600px) { 
+        padding: 0 300px;
+    }
 `
 const SummaryTitle = styled.h2`
     // Font Size
@@ -21,6 +27,7 @@ const SummaryTitle = styled.h2`
     }
     @media only screen and (max-width: 1024px) {
         font-size: ${typeScale.header3};
+        margin: 0 auto;
     }
 
     text-align: left;
