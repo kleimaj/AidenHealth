@@ -67,8 +67,8 @@ const App = () => {
         null
       )}
       <Header isMobile={isMobile} isDesktop={isDesktop} />
-      </div>
       <Summary />
+      </div>
       <GlobalStyle />
     </ThemeProvider>
   );

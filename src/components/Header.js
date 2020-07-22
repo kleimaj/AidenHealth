@@ -9,11 +9,15 @@ const HeaderWrapper = styled.header`
 // CSS
 // Contains image
     // background-color: #ffffff;
-    height: 70vh;
+    // height: 70vh;
     width: 100vw;
     padding: 0px 150px;
     @media only screen and (min-width: 1600px) { 
         padding: 0 300px;
+    }
+    @media only screen and (max-width: 1024px) {
+        // height: 40vh;
+        margin-top: 100px;
     }
 `;
 
@@ -43,7 +47,7 @@ const Subheader = styled.p`
 const MobileHeaderWrapper = styled.header`
 // CSS
 // Contains image
-    height: 80vh;
+    // height: 80vh;
     width: 100vw;
     // position: absolute;
     position: relative;

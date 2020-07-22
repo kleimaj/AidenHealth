@@ -11,6 +11,7 @@ const SummaryWrapper = styled.article`
     width: 100vw;
     align-items: center;
     margin: 0 auto;
+    // left: 300px;
 `
 const SummaryTitle = styled.h2`
     // Font Size
