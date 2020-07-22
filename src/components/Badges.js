@@ -15,9 +15,8 @@ const BadgesWrapper = styled.div`
 const Badge = styled.div`
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
     // padding: 50px;
-}
     // Mobile
     @media only screen and (max-width: 1024px) {
         padding: 25px;

@@ -12,9 +12,10 @@ const HeaderWrapper = styled.header`
     // height: 70vh;
     width: 100vw;
     padding: 0px 150px;
-    margin-top: 100px;
+    margin-top: calc(10vh + 200px);
     @media only screen and (min-width: 1600px) { 
         padding: 0 300px;
+        margin-top: 100px;
     }
     @media only screen and (max-width: 1024px) {
         // height: 40vh;
@@ -53,7 +54,7 @@ const MobileHeaderWrapper = styled.header`
     // position: absolute;
     position: relative;
     padding: 25px;
-    margin-top: 300px;
+    margin-top: 400px;
 `;
 
 const MobileCallToAction = styled.h1`
