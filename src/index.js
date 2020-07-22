@@ -63,7 +63,7 @@ const App = () => {
       (
         null
       )}
-      <Header />
+      <Header isMobile={isMobile} />
       </div>
       <GlobalStyle />
     </ThemeProvider>

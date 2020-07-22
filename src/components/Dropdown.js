@@ -42,7 +42,10 @@ const DropdownWrapper = styled.div`
 export const Dropdown = ({ showMenu, setShowMenu }) => {
     const animation = useSpring({
         opacity: showMenu ? 1: 0,
-        transform: showMenu ? `translateY(0)` : `translateY(-200%)`
+        transform: showMenu ? `translateY(0)` : `translateY(-200%)`,
+        zIndex: '2',
+        position: 'fixed',
+        top: '80px'
     });
     return (
         <animated.div style={animation}>

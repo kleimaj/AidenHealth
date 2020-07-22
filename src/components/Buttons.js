@@ -10,6 +10,11 @@ const BUTTON_MODIFIERS = {
     large: () => `
         font-size: ${typeScale.header5};
         padding: 16px 24px;
+        border-radius: 25px;
+    `,
+    center:() => `
+    margin: 0 auto;
+    display: block;
     `,
     warning: ({ theme }) => `
     ${console.log(theme)}

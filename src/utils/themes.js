@@ -1,5 +1,5 @@
 import { purple, neutral, yellow, red, green, blond } from "./colors";
-import { primaryFont } from "./typography";
+import { primaryFont, displayFont } from "./typography";
 
 export const defaultTheme = {
     primaryColor: purple[200],
@@ -15,6 +15,7 @@ export const defaultTheme = {
     formElementBackground: neutral[100],
     textOnFormElementBackground: neutral[600],
     primaryFont,
+    displayFont,
     status: {
         warningColor: yellow[100],
         warningColorHover: yellow[200],
@@ -42,6 +43,7 @@ export const darkTheme = {
     formElementBackground: purple[400],
     textOnFormElementBackground: neutral[100],
     primaryFont,
+    displayFont,
     status: {
         warningColor: yellow[100],
         warningColorHover: yellow[200],
