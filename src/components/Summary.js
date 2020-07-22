@@ -29,6 +29,7 @@ const SummaryTitle = styled.h2`
     @media only screen and (max-width: 1024px) {
         font-size: ${typeScale.header3};
         margin: 0 auto;
+        text-align: center;
     }
 
     text-align: left;
