@@ -12,7 +12,7 @@ const SummaryWrapper = styled.article`
     position: relative;
     width: 100vw;
     padding: 0px 150px;
-    top: 100px;
+    top: 200px;
     // padding-top: 300px;
 
     @media only screen and (max-width: 1024px) {

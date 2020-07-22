@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import { typeScale } from "../utils";
-import { PlusIcon } from '../assets/';
+import { PlusIcon, PercentIcon, CheckIcon } from '../assets/';
 
 const BadgesWrapper = styled.div`
     display: flex;
+    flex-direction: column;
     
     @media only screen and (max-width: 1024px) {
         margin: 0 auto;
@@ -36,9 +37,12 @@ const Badge = styled.div`
 `;
 
 const Title = styled.h3`
+    font-size: ${typeScale.header4};
     padding: 30px;
+    text-align: left;
     @media only screen and (max-width: 1024px) {
-        // padding: 10px;
+        padding: 0;
+        font-size: ${typeScale.header5};
     }
 `;
 
@@ -51,12 +55,12 @@ export const Badges = () => {
                 <PlusIcon />
                 <Title>ACA Compliance.</Title>
             </Badge>
-            {/* <Badge>
-                <Icon/>
-                <Title>Qualify for Discounts.</Title>
-            </Badge>
             <Badge>
-                <Icon/>
+                <PercentIcon/>
+                <Title>Quality Discounts.</Title>
+            </Badge>
+            {/* <Badge>
+                <CheckIcon/>
                 <Title>Ensure great health coverage.</Title>
             </Badge> */}
         </BadgesWrapper>

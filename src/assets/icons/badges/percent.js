@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const PercentIconWrapper = styled.svg`
-    width: 100%;
-    height: 100%;
+const PercentIconWrapper = styled.div`
+    // width: 100%;
+    // height: 100%;
 `
 
 export const PercentIcon=() => (
     <PercentIconWrapper aria-hidden="true">
 <svg version="1.1" id="Layer_1" focusable="false" xmlns="http://www.w3.org/2000/svg"
-	 x="0px" y="0px" width="595.279px" height="841.891px" viewBox="0 0 595.279 841.891" enable-background="new 0 0 595.279 841.891">
+	 x="0px" y="0px" width="100px" viewBox="0 0 595.279 841.891" enableBackground="new 0 0 595.279 841.891">
 <path fill="#7280FF" d="M595.28,420.945c0-43.833-27.555-81.27-66.387-95.803c17.091-37.67,10.23-83.595-20.812-114.638
 	c-31.043-31.043-76.968-37.903-114.638-20.812c-14.533-38.833-51.971-66.388-95.803-66.388s-81.27,27.555-95.803,66.388
 	c-37.67-17.091-83.711-10.231-114.638,20.812c-31.043,31.042-37.902,76.968-20.812,114.638C27.555,339.675,0,377.113,0,420.945
