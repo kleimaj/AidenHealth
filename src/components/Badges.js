@@ -5,6 +5,7 @@ import { PlusIcon } from '../assets/';
 
 const BadgesWrapper = styled.div`
     display: flex;
+    
     @media only screen and (max-width: 1024px) {
         margin: 0 auto;
     }
@@ -12,6 +13,10 @@ const BadgesWrapper = styled.div`
 
 const Badge = styled.div`
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // padding: 50px;
+}
     // Mobile
     @media only screen and (max-width: 1024px) {
         padding: 25px;
@@ -31,7 +36,10 @@ const Badge = styled.div`
 `;
 
 const Title = styled.h3`
-
+    padding: 30px;
+    @media only screen and (max-width: 1024px) {
+        // padding: 10px;
+    }
 `;
 
 export const Badges = () => {

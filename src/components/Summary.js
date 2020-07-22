@@ -8,14 +8,18 @@ const SummaryWrapper = styled.article`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     position: relative;
     width: 100vw;
     padding: 0px 150px;
+    top: 100px;
+    // padding-top: 300px;
 
     @media only screen and (max-width: 1024px) {
         position: relative;
         padding: 25px;
         flex-direction: column;
+        top: 0;
     }
     @media only screen and (min-width: 1600px) { 
         padding: 0 300px;
