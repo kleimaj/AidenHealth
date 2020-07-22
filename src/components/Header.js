@@ -9,11 +9,11 @@ const HeaderWrapper = styled.header`
 // CSS
 // Contains image
     // background-color: #ffffff;
-    height: 80vh;
+    height: 70vh;
     width: 100vw;
-    padding: 50px 150px;
+    padding: 0px 150px;
     @media only screen and (min-width: 1600px) { 
-        padding: 0 500px;
+        padding: 0 300px;
     }
 `;
 
@@ -45,7 +45,8 @@ const MobileHeaderWrapper = styled.header`
 // Contains image
     height: 80vh;
     width: 100vw;
-    position: absolute;
+    // position: absolute;
+    position: relative;
     padding: 25px;
 `;
 
@@ -120,7 +121,7 @@ export const Header = ({ isMobile, isDesktop }) => {
                         position: 'absolute',
                         top: '250px',
                         paddingBottom: '50px',
-                        right: '450px',
+                        right: '250px',
                     }}
                 /> 
             ) : (

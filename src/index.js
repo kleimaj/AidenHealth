@@ -5,6 +5,7 @@ import {
   Navbar, 
   Dropdown, 
   Header,
+  Summary,
   PrimaryButton, 
   SecondaryButton, 
   TertiaryButton } from './components';
@@ -67,6 +68,7 @@ const App = () => {
       )}
       <Header isMobile={isMobile} isDesktop={isDesktop} />
       </div>
+      <Summary />
       <GlobalStyle />
     </ThemeProvider>
   );
