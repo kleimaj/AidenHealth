@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { typeScale } from "../utils";
+import { Badges } from "./Badges";
 
 const SummaryWrapper = styled.article`
 
@@ -49,6 +50,7 @@ export const Summary = () => {
     return (
         <SummaryWrapper>
             <SummaryTitle>We can promise you this:</SummaryTitle>
+            <Badges />
         </SummaryWrapper>
     );
 }
