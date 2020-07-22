@@ -2,6 +2,7 @@ export const primaryFont = '"Work Sans", sans-serif';
 export const displayFont = '"DM Serif Display", serif';
 
 export const typeScale = {
+    jumbo: "3.815rem",
     header1: "3.0519rem",
     header2: "2.4413rem",
     header3: "1.9531rem",

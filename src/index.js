@@ -19,6 +19,8 @@ const App = () => {
   const [showMenu, setShowMenu] = useState(false);
   // If true, it's a mobile dimensions
   const isMobile = useMediaQuery('(max-width: 1024px)');
+  // If true, it's larger than a laptop
+  const isDesktop = useMediaQuery('(min-width: 1600px)');
 
   return (
     <ThemeProvider theme={useDarkTheme ? darkTheme: defaultTheme} >
@@ -63,7 +65,7 @@ const App = () => {
       (
         null
       )}
-      <Header isMobile={isMobile} />
+      <Header isMobile={isMobile} isDesktop={isDesktop} />
       </div>
       <GlobalStyle />
     </ThemeProvider>

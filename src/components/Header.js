@@ -12,6 +12,9 @@ const HeaderWrapper = styled.header`
     height: 80vh;
     width: 100vw;
     padding: 50px 150px;
+    @media only screen and (min-width: 1600px) { 
+        padding: 0 500px;
+    }
 `;
 
 const CallToAction = styled.h1`
@@ -22,6 +25,9 @@ const CallToAction = styled.h1`
     width: 895px;
     position: relative;
     z-index:1;
+    @media only screen and (min-width: 1600px) { 
+        font-size: ${typeScale.jumbo};
+    }
 `
 const Subheader = styled.p`
     font-size: ${typeScale.header5};
@@ -67,7 +73,7 @@ const MobileSubheader = styled.p`
     z-index:1;
 `
 
-export const Header = ({ isMobile }) => {
+export const Header = ({ isMobile, isDesktop }) => {
     if (isMobile) {
         return (
             <MobileHeaderWrapper>
@@ -104,18 +110,33 @@ export const Header = ({ isMobile }) => {
             is not impacted by the cost that you can afford to pay.
             </Subheader>
             <PrimaryButton>Apply Today</PrimaryButton>
-            <img 
-                src={Illustrations.HeroImage} 
-                alt="Sign up for an account" 
-                aria-hidden="true" 
-                style={{
-                    width: '800px',
-                    position: 'absolute',
-                    top: '250px',
-                    paddingBottom: '50px',
-                    right: '50px',
-                }}
+            { isDesktop ? (
+                <img 
+                    src={Illustrations.HeroImage} 
+                    alt="Sign up for an account" 
+                    aria-hidden="true" 
+                    style={{
+                        width: '800px',
+                        position: 'absolute',
+                        top: '250px',
+                        paddingBottom: '50px',
+                        right: '450px',
+                    }}
+                /> 
+            ) : (
+                <img 
+                    src={Illustrations.HeroImage} 
+                    alt="Sign up for an account" 
+                    aria-hidden="true" 
+                    style={{
+                        width: '800px',
+                        position: 'absolute',
+                        top: '250px',
+                        paddingBottom: '50px',
+                        right: '50px',
+                    }}
             />
+            )}
         </HeaderWrapper>
     )
 }

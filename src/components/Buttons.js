@@ -231,6 +231,8 @@ const Button = styled.button`
     cursor: pointer;
     font-family: "Work Sans", sans-serif;
     transition: background-color 0.2s linear, color 0.2s linear;
+    position: relative;
+    z-index: 1;
 
     &:hover {
         background-color: ${props => props.theme.primaryColorHover};
