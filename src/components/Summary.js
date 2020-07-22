@@ -15,6 +15,7 @@ const SummaryWrapper = styled.article`
     @media only screen and (max-width: 1024px) {
         position: relative;
         padding: 25px;
+        flex-direction: column;
     }
     @media only screen and (min-width: 1600px) { 
         padding: 0 300px;
