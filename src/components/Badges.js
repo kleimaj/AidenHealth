@@ -43,6 +43,7 @@ const Title = styled.h3`
     @media only screen and (max-width: 1024px) {
         padding: 0;
         font-size: ${typeScale.header5};
+        text-align: center;
     }
 `;
 
@@ -53,16 +54,16 @@ export const Badges = () => {
         <BadgesWrapper>
             <Badge>
                 <PlusIcon />
-                <Title>ACA Compliance.</Title>
+                <Title>ACA Compliant Plans.</Title>
             </Badge>
             <Badge>
                 <PercentIcon/>
                 <Title>Quality Discounts.</Title>
             </Badge>
-            {/* <Badge>
+            <Badge>
                 <CheckIcon/>
-                <Title>Ensure great health coverage.</Title>
-            </Badge> */}
+                <Title>Great health coverage.</Title>
+            </Badge>
         </BadgesWrapper>
     )
 }

@@ -12,7 +12,7 @@ const SummaryWrapper = styled.article`
     position: relative;
     width: 100vw;
     padding: 0px 150px;
-    top: 200px;
+    top: 400px;
     // padding-top: 300px;
 
     @media only screen and (max-width: 1024px) {
@@ -22,7 +22,8 @@ const SummaryWrapper = styled.article`
         top: 0;
     }
     @media only screen and (min-width: 1600px) { 
-        padding: 0 300px;
+        // padding: 0 300px;
+        top: 250px;
     }
 `
 const SummaryTitle = styled.h2`
