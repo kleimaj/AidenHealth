@@ -79,7 +79,7 @@ export const Header = ({ isMobile }) => {
                     alt="Sign up for an account" 
                     aria-hidden="true" 
                     style={{
-                        width: '90vw',
+                        width: 'calc(100% / 7 + 250px)',
                         position: 'relative',
                         margin: '0 auto',
                         display: 'block',
