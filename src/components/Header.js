@@ -9,11 +9,12 @@ const HeaderWrapper = styled.header`
 // CSS
 // Contains image
     // background-color: #ffffff;
-    // height: 70vh;
+    // height: 100vh;
     width: 100vw;
     padding: 0px 150px;
     // margin-top: calc(10vh + 200px);
-    margin-top: 400px;
+    // margin-top: 400px;
+    margin-top: 100px;
     @media only screen and (min-width: 1600px) { 
         padding: 0 300px;
         margin-top: 100px;

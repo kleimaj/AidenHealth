@@ -30,7 +30,6 @@ const App = () => {
         style={{
           background: useDarkTheme ? defaultTheme.primaryColorDarker : darkTheme.primaryColor,
           width: "100vw",
-          height: "100vh",
           display: "flex",
           alignItems: "center",
           justifyContent: "space-around",
