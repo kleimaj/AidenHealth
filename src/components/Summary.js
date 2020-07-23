@@ -49,7 +49,7 @@ const SummaryTitle = styled.h2`
         top: 0;
         width: 60px;
         z-index: 2;
-        background-color: black;
+        background-color: #FF6584;
     }
 `
 

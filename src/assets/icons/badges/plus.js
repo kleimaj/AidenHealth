@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const PlusIconWrapper = styled.div`
-    width: 100px;
+    // width: 100px;
     // height: 100%;
 `
 

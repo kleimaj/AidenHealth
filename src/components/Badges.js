@@ -17,6 +17,9 @@ const Badge = styled.div`
     align-items: center;
     justify-content: start;
     // padding: 50px;
+    svg {
+        width: 65px;
+    }
     // Mobile
     @media only screen and (max-width: 1024px) {
         padding: 25px;
