@@ -55,13 +55,13 @@ export const Dropdown = ({ showMenu, setShowMenu }) => {
                 flexDirection: 'column',
                 listStyle: 'none'
             }}>
-          <li><a><TertiaryButton modifiers="navTertiary">
+          <li><a href="#works"><TertiaryButton modifiers="navTertiary">
             How It Works
             </TertiaryButton></a></li>
-            <li><a><TertiaryButton modifiers="navTertiary">
+            <li><a href="#solutions"><TertiaryButton modifiers="navTertiary">
             Solutions
             </TertiaryButton></a></li>
-            <li><a><TertiaryButton modifiers="navTertiary">
+            <li><a href="#about"><TertiaryButton modifiers="navTertiary">
             About Us
             </TertiaryButton></a></li>
           <li style={{

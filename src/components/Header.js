@@ -56,7 +56,7 @@ const MobileHeaderWrapper = styled.header`
     // position: absolute;
     position: relative;
     padding: 25px;
-    margin-top: 400px;
+    margin-top: 100px;
 `;
 
 const MobileCallToAction = styled.h1`

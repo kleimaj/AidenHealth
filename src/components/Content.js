@@ -103,9 +103,9 @@ const SectionText = styled.div`
 
 `
 
-export const Content = () => {
+export const Content = ({ isMobile }) => {
     return (
-        <ContentContainer>
+        <ContentContainer >
             <ContentHeader>How We Do It:</ContentHeader>
             <Section>
                 <img 
@@ -117,13 +117,29 @@ export const Content = () => {
                 </SectionText>
             </Section>
             <Section>
-            <SectionText>
-                    <SectionHeader>Apply Today</SectionHeader>
-                    <SectionBodyCopy>You’ll need your income information, ID, proof of citizenship or lawful presence, Social Security number and ZIP code.</SectionBodyCopy>
-                </SectionText>
-                <img 
-                    src={Illustrations.Apply}
-                />
+                { isMobile ? (
+                <>
+                    <img 
+                        src={Illustrations.Apply}
+                    />
+                    <SectionText>
+                        <SectionHeader>Apply Today</SectionHeader>
+                        <SectionBodyCopy>You’ll need your income information, ID, proof of citizenship or lawful presence, Social Security number and ZIP code.</SectionBodyCopy>
+                    </SectionText>
+                </>
+                ) :
+                (
+                <>
+                    <SectionText>
+                        <SectionHeader>Apply Today</SectionHeader>
+                        <SectionBodyCopy>You’ll need your income information, ID, proof of citizenship or lawful presence, Social Security number and ZIP code.</SectionBodyCopy>
+                    </SectionText>
+                    <img 
+                        src={Illustrations.Apply}
+                    />
+                </>
+                )}
+
             </Section>
             <Section>
             <img 
@@ -136,19 +152,34 @@ export const Content = () => {
                 </SectionText>
             </Section>
             <Section>
-            <SectionText>
-                    <SectionHeader>Pay Your Bill</SectionHeader>
-                    <SectionBodyCopy>You may be able to make your first month’s payment online, or you can wait for the bill to come in the mail.</SectionBodyCopy>
-                </SectionText>
-                <img 
-                    src={Illustrations.Pay}
-                />
-            </Section>
+            { isMobile ? (
+                <>
+                    <img 
+                        src={Illustrations.Pay}
+                    />
+                    <SectionText>
+                        <SectionHeader>Pay Your Bill</SectionHeader>
+                        <SectionBodyCopy>You may be able to make your first month’s payment online, or you can wait for the bill to come in the mail.</SectionBodyCopy>
+                    </SectionText>
+                </>
+                ) :
+                (
+                <>
+                    <SectionText>
+                        <SectionHeader>Pay Your Bill</SectionHeader>
+                        <SectionBodyCopy>You may be able to make your first month’s payment online, or you can wait for the bill to come in the mail.</SectionBodyCopy>
+                    </SectionText>
+                    <img 
+                        src={Illustrations.Pay}
+                    />
+                </>
+                )}
+                </Section>
             <Section>
-            <img 
-                    src={Illustrations.Success}
+                <img 
+                        src={Illustrations.Success}
                 />
-            <SectionText>
+                <SectionText>
 
                     <SectionHeader>You’re Covered!</SectionHeader>
                     <SectionBodyCopy>You and your family can enjoy the peace of mind of knowing you have health insurance.</SectionBodyCopy>

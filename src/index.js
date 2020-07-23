@@ -7,7 +7,6 @@ import {
   Header,
   Summary,
   Content,
-  PrimaryButton, 
   SecondaryButton, 
   TertiaryButton } from './components';
 import { HamburgerIcon } from './assets';
@@ -45,7 +44,7 @@ const App = () => {
         )
         : (
         <ul>
-          <li><a><TertiaryButton modifiers="navTertiary">
+          <li><a href="#works"><TertiaryButton modifiers="navTertiary">
             How It Works
             </TertiaryButton></a></li>
             <li><a><TertiaryButton modifiers="navTertiary">
@@ -68,7 +67,7 @@ const App = () => {
       )}
       <Header isMobile={isMobile} isDesktop={isDesktop} />
       <Summary />
-      <Content />
+      <Content isMobile={isMobile} />
       </div>
       <GlobalStyle />
     </ThemeProvider>
