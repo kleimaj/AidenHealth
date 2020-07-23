@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import { ThemeProvider } from 'styled-components';
 import { 
+  SignUpModal,
   Navbar, 
   Dropdown, 
   Header,
@@ -34,6 +35,7 @@ const App = () => {
           justifyContent: "space-around",
           flexDirection: "column"
       }}>
+      {/* <SignUpModal showModal={showModal} setShowModal={setShowModal} /> */}
       <Navbar>
         <h1><a href="#">Logo</a></h1>
         {isMobile ? (
@@ -45,13 +47,15 @@ const App = () => {
         : (
         <ul>
           <li><a href="#works"><TertiaryButton modifiers="navTertiary">
-            How It Works
-            </TertiaryButton></a></li>
-            <li><a><TertiaryButton modifiers="navTertiary">
-            Solutions
+            Healthcare
             </TertiaryButton></a></li>
             <li><a><TertiaryButton modifiers="navTertiary">
             About Us
+            </TertiaryButton></a></li>
+            <li><a><TertiaryButton 
+            modifiers="navTertiary"
+            onClick={() => setUseDarkTheme(!useDarkTheme)}>
+            Dark Mode
             </TertiaryButton></a></li>
           <li><a><SecondaryButton modifiers="navSecondary">
               Apply Today

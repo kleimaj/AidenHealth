@@ -103,7 +103,7 @@ export const Header = ({ isMobile, isDesktop }) => {
                     }}
                 />
                 <MobileSubheader>
-                Welcome the only place where the quality of your health insurance 
+                Welcome to the only place where the quality of your health insurance 
                 is not impacted by the cost that you can afford to pay.
                 </MobileSubheader>
                 <PrimaryButton modifiers={['center', 'large']}>Apply Today</PrimaryButton>
@@ -116,10 +116,10 @@ export const Header = ({ isMobile, isDesktop }) => {
                 Because Life Is Worth Living
             </CallToAction>
             <Subheader>
-            Welcome the only place where the quality of your health insurance 
+            Welcome to the only place where the quality of your health insurance 
             is not impacted by the cost that you can afford to pay.
             </Subheader>
-            <PrimaryButton>Apply Today</PrimaryButton>
+            <PrimaryButton modifiers={"large"}>Apply Today</PrimaryButton>
             { isDesktop ? (
                 <img 
                     src={Illustrations.HeroImage} 

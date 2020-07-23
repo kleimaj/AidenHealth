@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { typeScale } from "../utils";
-import { PrimaryButton } from "./Buttons";
 import { Illustrations } from '../assets';
 
 const ContentContainer = styled.article`
@@ -110,6 +109,7 @@ export const Content = ({ isMobile }) => {
             <Section>
                 <img 
                     src={Illustrations.Shop}
+                    alt="An illustration of two people stuying a graph"
                 />
                 <SectionText>
                     <SectionHeader>Shop & Compare</SectionHeader>
@@ -121,6 +121,7 @@ export const Content = ({ isMobile }) => {
                 <>
                     <img 
                         src={Illustrations.Apply}
+                        alt="An illustration of a man filling out a form"
                     />
                     <SectionText>
                         <SectionHeader>Apply Today</SectionHeader>
@@ -136,6 +137,7 @@ export const Content = ({ isMobile }) => {
                     </SectionText>
                     <img 
                         src={Illustrations.Apply}
+                        alt="An illustration of a man filling out a form"
                     />
                 </>
                 )}
@@ -144,6 +146,7 @@ export const Content = ({ isMobile }) => {
             <Section>
             <img 
                     src={Illustrations.Help}
+                    alt="An illustration of two people talking on the phone"
                 />
             <SectionText>
 
@@ -156,6 +159,7 @@ export const Content = ({ isMobile }) => {
                 <>
                     <img 
                         src={Illustrations.Pay}
+                        alt="An illustration of a woman with a credit card and cash"
                     />
                     <SectionText>
                         <SectionHeader>Pay Your Bill</SectionHeader>
@@ -171,6 +175,7 @@ export const Content = ({ isMobile }) => {
                     </SectionText>
                     <img 
                         src={Illustrations.Pay}
+                        alt="An illustration of a woman with a credit card and cash"
                     />
                 </>
                 )}
@@ -178,6 +183,7 @@ export const Content = ({ isMobile }) => {
             <Section>
                 <img 
                         src={Illustrations.Success}
+                        alt="An illustration of a woman jumping for joy, in front of a life-sized smartphone with a check mark"
                 />
                 <SectionText>
 
