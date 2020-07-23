@@ -17,8 +17,14 @@ const Badge = styled.div`
     align-items: center;
     justify-content: start;
     // padding: 50px;
+    padding: 20px 0;
+    transition: all 0.2s linear;
     svg {
         width: 65px;
+    }
+    &:hover {
+        transition: all 0.2s linear;
+        transform: translateY(-10px);
     }
     // Mobile
     @media only screen and (max-width: 1024px) {
