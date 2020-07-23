@@ -135,6 +135,25 @@ export const Content = () => {
                     <SectionBodyCopy>You can get free help on the phone or in your neighborhood. Call (800) 123-9876 or click on the “Find Local Help” button on the home page.</SectionBodyCopy>
                 </SectionText>
             </Section>
+            <Section>
+            <SectionText>
+                    <SectionHeader>Pay Your Bill</SectionHeader>
+                    <SectionBodyCopy>You may be able to make your first month’s payment online, or you can wait for the bill to come in the mail.</SectionBodyCopy>
+                </SectionText>
+                <img 
+                    src={Illustrations.Pay}
+                />
+            </Section>
+            <Section>
+            <img 
+                    src={Illustrations.Success}
+                />
+            <SectionText>
+
+                    <SectionHeader>You’re Covered!</SectionHeader>
+                    <SectionBodyCopy>You and your family can enjoy the peace of mind of knowing you have health insurance.</SectionBodyCopy>
+                </SectionText>
+            </Section>
         </ContentContainer>
     )
 }
