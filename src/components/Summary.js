@@ -8,7 +8,7 @@ const SummaryWrapper = styled.article`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     position: relative;
     width: 100vw;
     padding: 0px 150px;
