@@ -56,6 +56,7 @@ const Section = styled.section`
     }
 
     img {
+        width: 550px;
         @media only screen and (max-width: 1024px) {
             width: 300px;
             padding: 25px;
@@ -113,6 +114,25 @@ export const Content = () => {
                 <SectionText>
                     <SectionHeader>Shop & Compare</SectionHeader>
                     <SectionBodyCopy>Long term healthily living and healthy diet adaption/ augmentation is the core goal.</SectionBodyCopy>
+                </SectionText>
+            </Section>
+            <Section>
+            <SectionText>
+                    <SectionHeader>Apply Today</SectionHeader>
+                    <SectionBodyCopy>You’ll need your income information, ID, proof of citizenship or lawful presence, Social Security number and ZIP code.</SectionBodyCopy>
+                </SectionText>
+                <img 
+                    src={Illustrations.Apply}
+                />
+            </Section>
+            <Section>
+            <img 
+                    src={Illustrations.Help}
+                />
+            <SectionText>
+
+                    <SectionHeader>Need Help?</SectionHeader>
+                    <SectionBodyCopy>You can get free help on the phone or in your neighborhood. Call (800) 123-9876 or click on the “Find Local Help” button on the home page.</SectionBodyCopy>
                 </SectionText>
             </Section>
         </ContentContainer>
