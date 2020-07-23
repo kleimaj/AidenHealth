@@ -15,7 +15,8 @@ const ModalWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: absolute;
+    z-index: 7;
     border-radius: 2px;
 `
 const SignUpHeader = styled.h3`
@@ -43,7 +44,14 @@ export const SignUpModal = ({ showModal, setShowModal }) => {
     const animation = useSpring({
         opacity: showModal ? 1: 0,
         transform: showModal ? `translateY(0)` : `translateY(-200%)`,
-        config: config.stiff
+        config: config.stiff,
+        left: '25%',
+        position: 'fixed',
+        // right: '0',
+        top: '100px',
+        // margin: '0 auto',
+        // textAlign: 'center',
+        zIndex: '5'
     });
     return (
         <animated.div style={animation}>

@@ -26,6 +26,7 @@ const App = () => {
 
   return (
     <ThemeProvider theme={useDarkTheme ? darkTheme: defaultTheme} >
+        <SignUpModal showModal={showModal} setShowModal={setShowModal} />
     <div 
         style={{
           background: useDarkTheme ? defaultTheme.primaryColorDarker : darkTheme.primaryColor,
@@ -35,7 +36,6 @@ const App = () => {
           justifyContent: "space-around",
           flexDirection: "column"
       }}>
-      {/* <SignUpModal showModal={showModal} setShowModal={setShowModal} /> */}
       <Navbar>
         <h1><a href="#">Logo</a></h1>
         {isMobile ? (
@@ -57,14 +57,20 @@ const App = () => {
             onClick={() => setUseDarkTheme(!useDarkTheme)}>
             Dark Mode
             </TertiaryButton></a></li>
-          <li><a><SecondaryButton modifiers="navSecondary">
+          <li><a><SecondaryButton 
+            modifiers="navSecondary"
+            onClick={() => setShowModal(!showModal)}>
               Apply Today
             </SecondaryButton></a></li>
         </ul>
         )}
       </Navbar>
       {isMobile ? (
-      <Dropdown showMenu={showMenu} setShowMenu={setShowMenu} />
+      <Dropdown 
+        showMenu={showMenu} 
+        setShowMenu={setShowMenu}
+        showModal={showModal}
+        setShowModal={setShowModal} />
       ):
       (
         null

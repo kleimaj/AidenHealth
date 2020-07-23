@@ -39,7 +39,7 @@ const DropdownWrapper = styled.div`
     }
 `
 
-export const Dropdown = ({ showMenu, setShowMenu }) => {
+export const Dropdown = ({ showMenu, setShowMenu, showModal, setShowModal }) => {
     const animation = useSpring({
         opacity: showMenu ? 1: 0,
         transform: showMenu ? `translateY(0)` : `translateY(-200%)`,
@@ -68,7 +68,11 @@ export const Dropdown = ({ showMenu, setShowMenu }) => {
               margin: '15px',
               position: 'relative',
               bottom: '0'
-          }}><a><SecondaryButton modifiers={["navSecondary"]}>
+          }}><a><SecondaryButton 
+                    modifiers={["navSecondary"]}
+                    onClick={() => {
+                        setShowModal(!showModal)
+                        setShowMenu(!showMenu)}}>
               Apply Today
             </SecondaryButton></a></li>
             </ul>
