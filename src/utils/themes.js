@@ -36,7 +36,7 @@ export const darkTheme = {
     primaryColorActive: neutral[100],
     disabled: purple[100],
     textColorOnPrimary:  blond[200],
-    textColorOnDark: blond[100],
+    textColorOnDark: purple[400],
     textColor: purple[300],
     textColorInverted: neutral[500],
     textOnDisabled: neutral[300],
