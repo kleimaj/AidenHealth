@@ -83,7 +83,7 @@ const MobileSubheader = styled.p`
     z-index:1;
 `
 
-export const Header = ({ isMobile, isDesktop }) => {
+export const Header = ({ isMobile, isDesktop, showModal, setShowModal }) => {
     if (isMobile) {
         return (
             <MobileHeaderWrapper>
@@ -106,7 +106,12 @@ export const Header = ({ isMobile, isDesktop }) => {
                 Welcome to the only place where the quality of your health insurance 
                 is not impacted by the cost that you can afford to pay.
                 </MobileSubheader>
-                <PrimaryButton modifiers={['center', 'large']}>Apply Today</PrimaryButton>
+                <PrimaryButton 
+                    modifiers={['center', 'large']}
+                    onClick={() => setShowModal(!showModal)}
+                >
+                Apply Today
+                </PrimaryButton>
             </MobileHeaderWrapper>
         )
     }
@@ -119,7 +124,12 @@ export const Header = ({ isMobile, isDesktop }) => {
             Welcome to the only place where the quality of your health insurance 
             is not impacted by the cost that you can afford to pay.
             </Subheader>
-            <PrimaryButton modifiers={"large"}>Apply Today</PrimaryButton>
+            <PrimaryButton 
+                modifiers={"large"}
+                onClick={() => setShowModal(!showModal)}
+                 >
+                Apply Today
+            </PrimaryButton>
             { isDesktop ? (
                 <img 
                     src={Illustrations.HeroImage} 

@@ -26,7 +26,6 @@ const App = () => {
 
   return (
     <ThemeProvider theme={useDarkTheme ? darkTheme: defaultTheme} >
-        <SignUpModal showModal={showModal} setShowModal={setShowModal} />
     <div 
         style={{
           background: useDarkTheme ? defaultTheme.primaryColorDarker : darkTheme.primaryColor,
@@ -36,6 +35,8 @@ const App = () => {
           justifyContent: "space-around",
           flexDirection: "column"
       }}>
+      <SignUpModal showModal={showModal} setShowModal={setShowModal} />
+
       <Navbar>
         <h1><a href="#">Logo</a></h1>
         {isMobile ? (
@@ -75,7 +76,11 @@ const App = () => {
       (
         null
       )}
-      <Header isMobile={isMobile} isDesktop={isDesktop} />
+      <Header 
+        isMobile={isMobile}
+        isDesktop={isDesktop}
+        showModal={showModal}
+        setShowModal={setShowModal} />
       <Summary />
       <Content isMobile={isMobile} />
       </div>

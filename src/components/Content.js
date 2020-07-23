@@ -40,7 +40,7 @@ font-family: ${props => props.theme.displayFont};
     left: 50%;
     right: 50%;
     width: 60px;
-    z-index: 2;
+    z-index: 1;
     background-color: #FF6584;
 }
 `

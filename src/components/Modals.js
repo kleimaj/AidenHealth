@@ -44,14 +44,14 @@ export const SignUpModal = ({ showModal, setShowModal }) => {
     const animation = useSpring({
         opacity: showModal ? 1: 0,
         transform: showModal ? `translateY(0)` : `translateY(-200%)`,
+        zIndex: showModal ? '2' : `-1`,
         config: config.stiff,
-        left: '25%',
+        left: 'calc(25% - 150px)',
         position: 'fixed',
         // right: '0',
         top: '100px',
         // margin: '0 auto',
         // textAlign: 'center',
-        zIndex: '5'
     });
     return (
         <animated.div style={animation}>
