@@ -1,5 +1,6 @@
 import SignUp from './illustrations/sign-up.svg'
 import HeroImage from './illustrations/hero-image.svg'
+import Shop from './illustrations/shop.svg';
 
 export * from './icons/close-icon';
 export * from './icons/hamburger-icon';
@@ -7,5 +8,6 @@ export * from './icons/badges';
 
 export const Illustrations = {
     SignUp,
-    HeroImage
+    HeroImage,
+    Shop,
 };

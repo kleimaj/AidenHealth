@@ -12,7 +12,8 @@ const HeaderWrapper = styled.header`
     // height: 70vh;
     width: 100vw;
     padding: 0px 150px;
-    margin-top: calc(10vh + 200px);
+    // margin-top: calc(10vh + 200px);
+    margin-top: 400px;
     @media only screen and (min-width: 1600px) { 
         padding: 0 300px;
         margin-top: 100px;

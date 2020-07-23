@@ -6,6 +6,7 @@ import {
   Dropdown, 
   Header,
   Summary,
+  Content,
   PrimaryButton, 
   SecondaryButton, 
   TertiaryButton } from './components';
@@ -68,6 +69,7 @@ const App = () => {
       )}
       <Header isMobile={isMobile} isDesktop={isDesktop} />
       <Summary />
+      <Content />
       </div>
       <GlobalStyle />
     </ThemeProvider>
