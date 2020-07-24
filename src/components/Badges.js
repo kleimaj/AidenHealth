@@ -19,7 +19,7 @@ const Badge = styled.div`
     align-items: center;
     justify-content: start;
     // padding: 50px;
-    padding: 20px 0;
+    padding: 25px 10px;
     // transition: all 0.2s linear;
     flex-direction: column;
     svg {
@@ -31,7 +31,8 @@ const Badge = styled.div`
     // }
     // Mobile
     @media only screen and (max-width: 1024px) {
-        padding: 25px;
+        // padding: 25px;
+        padding: 10px;
         flex-direction: column;
         text-align: center;
         margin: 0 auto;
@@ -39,6 +40,7 @@ const Badge = styled.div`
 
         svg {
             width: 50px;
+            margin: 10px;
         }
     }
     // Large Monitor
@@ -51,7 +53,7 @@ const Badge = styled.div`
 const Title = styled.h3`
     font-size: ${typeScale.header4};
     // padding: 30px;
-    padding: 0 30px;
+    // padding: 0 30px;
     text-align: left;
     @media only screen and (max-width: 1024px) {
         padding: 0;
@@ -59,6 +61,20 @@ const Title = styled.h3`
         text-align: center;
     }
 `;
+const Body = styled.p`
+    font-size: ${typeScale.header5};
+    // padding: 0 30px;
+    padding-bottom: 30px;
+    text-align: left;
+    margin-top: 0;
+    font-family: ${props => props.theme.primaryFont};
+    // width: 305px;
+    line-height: 30.8px;
+    @media only screen and (max-width: 1024px) {
+        font-size: ${typeScale.paragraph};
+        padding-bottom: 0;
+    }
+`
 
 export const Badges = () => {
     //  Qualify for Discounts.
@@ -68,14 +84,17 @@ export const Badges = () => {
             <Badge>
                 <PlusIcon />
                 <Title>ACA Compliant Plans.</Title>
+                <Body>Aiden is the place where you can get brand-name health insurance under the Patient Protection and Affordable Care Act.</Body>
             </Badge>
             <Badge>
                 <PercentIcon/>
                 <Title>Quality Discounts.</Title>
+                <Body>Our developed provider offers high-quality, cost-effective discounts and access to physicians and hospitals throughout the USA.</Body>
             </Badge>
             <Badge>
                 <CheckIcon/>
                 <Title>Great health coverage.</Title>
+                <Body>We offer a broad spectrum of health and wellness programs to ensure our members a healthy plan at every stage in life.</Body>
             </Badge>
         </BadgesWrapper>
     )
