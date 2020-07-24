@@ -5,6 +5,7 @@ import Apply from './illustrations/apply.svg';
 import Help from './illustrations/help.svg';
 import Pay from './illustrations/pay.svg';
 import Success from './illustrations/success.svg';
+import Hospital from './illustrations/hospital.svg';
 
 export * from './icons/close-icon';
 export * from './icons/hamburger-icon';
@@ -18,4 +19,5 @@ export const Illustrations = {
     Help,
     Pay,
     Success,
+    Hospital
 };
