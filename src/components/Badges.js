@@ -65,7 +65,7 @@ const Body = styled.p`
     font-size: ${typeScale.header5};
     // padding: 0 30px;
     padding-bottom: 30px;
-    text-align: left;
+    text-align: center;
     margin-top: 0;
     font-family: ${props => props.theme.primaryFont};
     // width: 305px;

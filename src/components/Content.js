@@ -75,7 +75,6 @@ const SectionHeader = styled.h3`
         text-align: center;
     }
     margin: 4px;
-
     text-align: left;
     position: relative;
     font-family: ${props => props.theme.displayFont};
