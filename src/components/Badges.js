@@ -69,7 +69,8 @@ const Body = styled.p`
     margin-top: 0;
     font-family: ${props => props.theme.primaryFont};
     // width: 305px;
-    line-height: 30.8px;
+    // line-height: 30.8px;
+    line-height: 2rem;
     @media only screen and (max-width: 1024px) {
         font-size: ${typeScale.paragraph};
         padding-bottom: 0;
