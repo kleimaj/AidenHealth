@@ -16,6 +16,8 @@ const SummaryWrapper = styled.article`
     // padding-top: 300px;
     // margin-top: 100px;
 
+    background: ${props => props.theme.blondBackground};
+
     @media only screen and (max-width: 1024px) {
         position: relative;
         padding: 25px;

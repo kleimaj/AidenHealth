@@ -19,7 +19,8 @@ export const blue = {
     100: "#EBEADF",
     200: "#FEF5CA",
     300: "#F0E798",
-    400: "#FFDBA9"
+    400: "#FFDBA9",
+    500: "#FFF0DB"
   }
 
   export const hotPink = {
