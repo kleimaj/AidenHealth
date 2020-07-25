@@ -12,6 +12,7 @@ const ContentContainer = styled.article`
     top: 400px;
     width: 100vw;
     padding: 0px 150px;
+    padding-bottom: 80px;
     @media only screen and (max-width: 1024px) {
         padding: 0;
         top: 100px;

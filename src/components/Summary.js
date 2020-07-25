@@ -16,6 +16,7 @@ const SummaryWrapper = styled.article`
     // padding-top: 300px;
     // margin-top: 100px;
 
+    color: ${props => props.theme.textColorOnPrimary};
     background: ${props => props.theme.blondBackground};
 
     @media only screen and (max-width: 1024px) {
@@ -43,6 +44,7 @@ const SummaryTitle = styled.h2`
 
     text-align: left;
     position: relative;
+    color: ${props => props.theme.textColorOnPrimary};
     font-family: ${props => props.theme.displayFont};
 
     &::before {

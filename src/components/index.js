@@ -5,3 +5,5 @@ export * from './Dropdown';
 export * from './Header';
 export * from './Summary';
 export * from './Content';
+export * from './About';
+export * from './Typography';

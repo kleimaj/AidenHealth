@@ -8,6 +8,7 @@ import {
   Header,
   Summary,
   Content,
+  About,
   SecondaryButton, 
   TertiaryButton } from './components';
 import { HamburgerIcon } from './assets';
@@ -83,6 +84,7 @@ const App = () => {
         setShowModal={setShowModal} />
       <Summary />
       <Content isMobile={isMobile} />
+      <About />
       </div>
       <GlobalStyle />
     </ThemeProvider>
