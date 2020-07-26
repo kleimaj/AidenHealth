@@ -27,8 +27,8 @@ const DropdownWrapper = styled.div`
 
     // Storybook settings
     @media only screen and (min-width: 1000px) {
-        width: 320px;
-        margin: 0 auto;
+        // width: 320px;
+        // margin: 0 auto;
       }
 
     ul {
@@ -36,6 +36,9 @@ const DropdownWrapper = styled.div`
     }
     li {
         padding: 15px 0;
+    }
+    button {
+        font-size: 1.25rem;
     }
 `
 

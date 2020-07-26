@@ -82,6 +82,11 @@ const SectionHeader = styled.h3`
 `
 const SectionBodyCopy = styled.p`
     font-size: ${typeScale.paragraph};
+    font-size: ${typeScale.header5};
+    width: 500px;
+        // line-height: 3rem;
+    line-height: 2rem;
+
     @media only screen and (min-width: 1600px) { 
         font-size: ${typeScale.header5};
         width: 500px;
@@ -92,6 +97,8 @@ const SectionBodyCopy = styled.p`
     @media only screen and (max-width: 1024px) {
         margin: 0 auto;
         text-align: center;
+        width: 320px;
+        font-size: ${typeScale.paragraph};
         padding: 15px;
         line-height: 2rem;
     }

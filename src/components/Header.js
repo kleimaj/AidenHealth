@@ -74,7 +74,7 @@ const MobileSubheader = styled.p`
     color: ${props => props.theme.textColorOnPrimary};
     text-align: left;
     margin: 0 auto;
-    padding: 25px;
+    padding: 25px 0;
     width: 80vw;
     line-height: 30px;
     background: none;
@@ -103,7 +103,7 @@ export const Header = ({ isMobile, isDesktop, showModal, setShowModal }) => {
                     }}
                 />
                 <MobileSubheader>
-                Welcome to the only place where the quality of your health insurance 
+                The only place where the quality of your health insurance 
                 is not impacted by the cost that you can afford to pay.
                 </MobileSubheader>
                 <PrimaryButton 

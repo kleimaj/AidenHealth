@@ -25,6 +25,7 @@ const AboutWrapper = styled.article`
         img {
             width: 200px;
         }
+        top: 150px;
     }
 `
 const Header = styled.h2`
