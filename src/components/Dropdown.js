@@ -71,13 +71,13 @@ export const Dropdown = ({ showMenu, setShowMenu, showModal, setShowModal }) => 
               margin: '15px',
               position: 'relative',
               bottom: '0'
-          }}><a><SecondaryButton 
+          }}><SecondaryButton 
                     modifiers={["navSecondary"]}
                     onClick={() => {
                         setShowModal(!showModal)
                         setShowMenu(!showMenu)}}>
               Apply Today
-            </SecondaryButton></a></li>
+            </SecondaryButton></li>
             </ul>
         </DropdownWrapper>
         </animated.div>

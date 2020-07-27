@@ -7,3 +7,4 @@ export * from './Summary';
 export * from './Content';
 export * from './About';
 export * from './Typography';
+export * from './Footer';

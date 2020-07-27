@@ -9,6 +9,7 @@ import {
   Summary,
   Content,
   About,
+  Footer,
   SecondaryButton, 
   TertiaryButton } from './components';
 import { HamburgerIcon } from './assets';
@@ -39,7 +40,7 @@ const App = () => {
       <SignUpModal showModal={showModal} setShowModal={setShowModal} />
 
       <Navbar>
-        <h1><a href="#">Logo</a></h1>
+        <h1><a href="#aiden">Logo</a></h1>
         {isMobile ? (
           <HamburgerIcon 
             onClick={() => setShowMenu(!showMenu)} 
@@ -51,19 +52,19 @@ const App = () => {
           <li><a href="#works"><TertiaryButton modifiers="navTertiary">
             Healthcare
             </TertiaryButton></a></li>
-            <li><a><TertiaryButton modifiers="navTertiary">
+            <li><a href="#about"><TertiaryButton modifiers="navTertiary">
             About Us
             </TertiaryButton></a></li>
-            <li><a><TertiaryButton 
+            <li><a href="#dark"><TertiaryButton 
             modifiers="navTertiary"
             onClick={() => setUseDarkTheme(!useDarkTheme)}>
             Dark Mode
             </TertiaryButton></a></li>
-          <li><a><SecondaryButton 
+          <li><SecondaryButton 
             modifiers="navSecondary"
             onClick={() => setShowModal(!showModal)}>
               Apply Today
-            </SecondaryButton></a></li>
+            </SecondaryButton></li>
         </ul>
         )}
       </Navbar>
@@ -85,6 +86,7 @@ const App = () => {
       <Summary />
       <Content isMobile={isMobile} />
       <About />
+      <Footer />
       </div>
       <GlobalStyle />
     </ThemeProvider>

@@ -32,7 +32,7 @@ export const defaultTheme = {
 
 export const darkTheme = {
     primaryColor: neutral[100],
-    primaryColorDarker: neutral[100],
+    primaryColorDarker: purple[400],
     primaryColorHover: neutral[200],
     primaryColorActive: neutral[100],
     disabled: purple[100],
