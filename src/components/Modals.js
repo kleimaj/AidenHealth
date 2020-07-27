@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useSpring, animated, config } from 'react-spring';
 import { typeScale } from '../utils';
+import { useSpring, animated, config } from 'react-spring';
 import { Illustrations, CloseIcon } from '../assets';
 import { PrimaryButton } from './Buttons';
 

@@ -8,3 +8,4 @@ export * from './Content';
 export * from './About';
 export * from './Typography';
 export * from './Footer';
+export * from './Input';
