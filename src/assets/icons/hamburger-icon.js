@@ -8,7 +8,8 @@ const Hamburger = styled.span`
     top: .5rem;
     width: 28px;
     height: 3px;
-    background: #fff;
+    // background: #fff;
+    background-color: ${props => props.theme.primaryColorDarker};
     transition: all 0.5s ease-in-out;
     padding-right: 28px;
 
@@ -18,7 +19,7 @@ const Hamburger = styled.span`
             top: -8px;
             width: 28px;
             height: 3px;
-            background-color: #ffffff;
+            background-color: ${props => props.theme.primaryColorDarker};
             transition: all 0.5s ease-in-out;
 
         }
@@ -29,7 +30,8 @@ const Hamburger = styled.span`
             top: 8px;
             width: 20px;
             height: 3px;
-            background-color: #ffffff;
+            // background-color: #ffffff;
+            background-color: ${props => props.theme.primaryColorDarker};
             transition: all 0.5s ease-in-out;
         }
         &::focus {

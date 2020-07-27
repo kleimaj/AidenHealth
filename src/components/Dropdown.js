@@ -6,7 +6,8 @@ import { SecondaryButton, TertiaryButton } from './Buttons';
 const DropdownWrapper = styled.div`
     // height: calc(100vh - 85px);
     // height: calc(100vh - 250px);
-    background-color: ${props => props.theme.primaryColorDarker};
+    // background-color: ${props => props.theme.primaryColorDarker};
+    background-color: #E7E7E7;
     color: ${props => props.theme.textColorOnDark};
     display: flex;
     justify-content: space-between;
