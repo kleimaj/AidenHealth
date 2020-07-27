@@ -24,8 +24,10 @@ const NAVBAR_MODIFIERS = {
 
 export const Navbar = styled.nav`
 // CSS
-    background-color: ${props => props.theme.primaryColorDarker};
-    color: ${props => props.theme.textColorInverted};
+    // background-color: ${props => props.theme.primaryColorDarker};
+    background-color: ${props => props.theme.navColor};
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    color: ${props => props.theme.primaryColorDarker};
     padding-left: 1rem;
     padding-top: 1rem;
     border-radius: 0 0 5px 5px;
@@ -44,7 +46,7 @@ export const Navbar = styled.nav`
     }
 
     a {
-        color: ${props => props.theme.textColorInverted};
+        color: ${props => props.theme.primaryColorDarker};
         text-decoration: none;
         padding: 10px 15px;
         text-align: center;

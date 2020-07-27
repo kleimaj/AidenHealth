@@ -12,7 +12,7 @@ import {
   Footer,
   SecondaryButton, 
   TertiaryButton } from './components';
-import { HamburgerIcon } from './assets';
+import { HamburgerIcon, Logo } from './assets';
 import { GlobalStyle, darkTheme, defaultTheme } from "./utils"
 import { useMediaQuery } from './hooks';
 
@@ -40,7 +40,8 @@ const App = () => {
       <SignUpModal showModal={showModal} setShowModal={setShowModal} />
 
       <Navbar>
-        <h1><a href="#aiden">Logo</a></h1>
+        {/* <h1><a href="#aiden">Logo</a></h1> */}
+        <h1><Logo></Logo></h1>
         {isMobile ? (
           <HamburgerIcon 
             onClick={() => setShowMenu(!showMenu)} 
@@ -63,8 +64,13 @@ const App = () => {
           <li><SecondaryButton 
             modifiers="navSecondary"
             onClick={() => setShowModal(!showModal)}>
-              Apply Today
+              Log In
             </SecondaryButton></li>
+          <li><SecondaryButton 
+          modifiers="navSecondaryInverted"
+          onClick={() => setShowModal(!showModal)}>
+            Sign Up
+          </SecondaryButton></li>
         </ul>
         )}
       </Navbar>

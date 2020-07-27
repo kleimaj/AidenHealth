@@ -186,34 +186,71 @@ const BUTTON_MODIFIERS = {
         }
     `,
     navSecondary: ({theme}) => `
-    border: 2px solid ${theme.textColorOnDark};
-    border-color: ${theme.textColorOnDark};
-    color: ${theme.textColorOnDark};
+    // border: 2px solid ${theme.textColorOnDark};
+    // border-color: ${theme.textColorOnDark};
+    // color: ${theme.textColorOnDark};
+    border: 2px solid ${theme.primaryColorDarker};
+    border-color: ${theme.primaryColorDarker};
     margin: 0 35px;
+    transition: all 0.2s linear;
+
 
     &:hover {
-        background-color: ${theme.textColorInverted};
-        color: ${theme.primaryColorDarker};
+        background-color: ${theme.primaryColorDarker};
+        color: ${theme.blond};
+        transition: all 0.2s linear;
     }
 
     &:focus {
-        outline: 3px solid ${theme.textColorOnDark};
+        outline: 3px solid ${theme.primaryColorDarker};
         background-color: ${theme.textColorOnDark};
         color: ${theme.primaryColorDarker};
     }
 
     &:active {
         background-color: ${theme.textColorOnDark};
+        // text-decoration: underline;
+        color: ${theme.primaryColorDarker};
+    }
+    `,
+    navSecondaryInverted: ({ theme }) => `
+    border: 2px solid ${theme.primaryColorDarker};
+    border-color: ${theme.primaryColorDarker};
+    background-color: ${theme.primaryColorDarker};
+    color: ${theme.blond};
+    margin: 0 15px;
+    transition: all 0.2s linear;
+
+
+    &:hover {
+        background-color: none;
+        color: ${theme.primaryColorDarker};
+        transition: all 0.2s linear;
+    }
+
+    &:focus {
+        outline: 3px solid ${theme.primaryColorDarker};
+        background-color: ${theme.primaryColor};
+        color: ${theme.primaryColorDarker};
+    }
+
+    &:active {
+        background-color: ${theme.textColorOnDark};
+        // text-decoration: underline;
         color: ${theme.primaryColorDarker};
     }
     `,
     navTertiary: ({ theme }) => `
     background: none;
-    color: ${theme.textColorOnDark};
+    // color: ${theme.textColorOnDark};
+    transition: all 0.2s linear;
 
     &:hover {
-        color: ${theme.textColorInverted};
+        // color: ${theme.textColorInverted};
+        text-decoration: underline;
         background: none;
+        transition: all 0.2s linear;
+
     }
 
     &:focus {
@@ -227,7 +264,7 @@ const Button = styled.button`
     padding: 12px 24px;
     font-size: ${typeScale.paragraph};
     border-radius: 20px;
-    min-width: 100px;
+    min-width: 140px;
     cursor: pointer;
     font-family: "Work Sans", sans-serif;
     transition: background-color 0.2s linear, color 0.2s linear;
