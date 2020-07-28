@@ -44,6 +44,7 @@ const FooterBottom = styled.nav`
 `
 const NavGroups = styled.ul`
     display: flex;
+    width: 70vw;
     justify-content: space-evenly;
     flex-direction: row;
     list-style-type: none;
@@ -52,19 +53,30 @@ const NavGroups = styled.ul`
 `
 const NavGroup = styled.li`
     display: flex;
-    justify-content:space-evenly;
+    // justify-content:space-evenly;
     flex-direction: column;
+    justify-content: flex-start;
+
 `
 const GroupHeader = styled.h5`
-
+    color: ${props => props.theme.blond};
+    font-size: ${typeScale.header5};
 `
 const LinkGroup = styled.ul`
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     list-style-type: none;
+    padding: 0;
 `
 const Link = styled.li`
+color: ${props => props.theme.blond};
+    p {
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
 
 `
 
@@ -90,12 +102,42 @@ export const Footer = () => {
                     <NavGroup>
                         <GroupHeader>Plans</GroupHeader>
                         <LinkGroup>
-                            <Link>Medicare Advantage</Link>
-                            <Link>Individuals & Families</Link>
-                            <Link>Businesses</Link>
-                            <Link>Discounts and Deals</Link>
-                            <Link>COVID-19 Resources</Link>
-                            <Link>Advanced Care</Link>
+                            <Link><p>Medicare Advantage</p></Link>
+                            <Link><p>Individuals & Families</p></Link>
+                            <Link><p>Businesses</p></Link>
+                            <Link><p>Discounts and Deals</p></Link>
+                            <Link><p>COVID-19 Resources</p></Link>
+                            <Link><p>Advanced Care</p></Link>
+                        </LinkGroup>
+                    </NavGroup>
+                    <NavGroup>
+                        <GroupHeader>Locations</GroupHeader>
+                        <LinkGroup>
+                            <Link><p>Los Angeles</p></Link>
+                            <Link><p>New York</p></Link>
+                            <Link><p>San Francisco Bay Area</p></Link>
+                            <Link><p>Seattle</p></Link>
+                            <Link><p>Washington DC</p></Link>
+                            <Link><p>San Diego</p></Link>
+                        </LinkGroup>
+                    </NavGroup>
+                    <NavGroup>
+                        <GroupHeader>About Us</GroupHeader>
+                        <LinkGroup>
+                            <Link><p>Launch Story</p></Link>
+                            <Link><p>20 Year Plan</p></Link>
+                            <Link><p>Our Technology</p></Link>
+                            <Link><p>Jobs</p></Link>
+                            <Link><p>Blog</p></Link>
+                            <Link><p>Press</p></Link>
+                        </LinkGroup>
+                    </NavGroup>
+                    <NavGroup>
+                        <GroupHeader>Contact Us</GroupHeader>
+                        <LinkGroup>
+                            <Link><p>(800) 123-1612</p></Link>
+                            <Link><p>Chat With Us</p></Link>
+                            <Link><p>FAQs</p></Link>
                         </LinkGroup>
                     </NavGroup>
                 </NavGroups>
