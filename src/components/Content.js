@@ -56,7 +56,9 @@ const Section = styled.section`
     }
 
     img {
-        width: 550px;
+        // width: 550px;
+        width: 400px;
+
         @media only screen and (max-width: 1024px) {
             width: 300px;
             padding: 25px;
