@@ -45,6 +45,41 @@ font-family: ${props => props.theme.displayFont};
     background-color: #FF6584;
 }
 `
+const ContentBottomHeader = styled.h5`
+font-size: ${typeScale.header5};
+@media only screen and (min-width: 1600px) { 
+    font-size: ${typeScale.header4};
+}
+@media only screen and (max-width: 1024px) {
+    font-size: ${typeScale.header5};
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px;
+}
+
+text-align: center;
+position: relative;
+font-family: ${props => props.theme.primaryFont};
+`
+const ContentBottomParagraph = styled.p`
+font-size: ${typeScale.paragraph};
+@media only screen and (min-width: 1600px) { 
+    font-size: ${typeScale.header5};
+}
+@media only screen and (max-width: 1024px) {
+    font-size: ${typeScale.paragraph};
+    margin: 0 auto;
+    text-align: center;
+}
+
+a {
+    color: ${props => props.theme.primaryColor}
+}
+
+text-align: center;
+position: relative;
+font-family: ${props => props.theme.primaryFont};
+`
 const Section = styled.section`
     display: flex;
     flex-direction: row;
@@ -58,10 +93,13 @@ const Section = styled.section`
     img {
         // width: 550px;
         width: 400px;
-
+        padding: 20px;
         @media only screen and (max-width: 1024px) {
             width: 300px;
             padding: 25px;
+        }
+        @media only screen and (min-width: 1600px) { 
+            width: 550px;
         }
     }
 
@@ -154,7 +192,7 @@ export const Content = ({ isMobile }) => {
                 )}
 
             </Section>
-            <Section>
+            {/* <Section>
             <img 
                     src={Illustrations.Help}
                     alt="An illustration of two people talking on the phone"
@@ -164,7 +202,7 @@ export const Content = ({ isMobile }) => {
                     <SectionHeader>Need Help?</SectionHeader>
                     <SectionBodyCopy>You can get free help on the phone or in your neighborhood. Call (800) 123-9876 or click on the “Find Local Help” button on the home page.</SectionBodyCopy>
                 </SectionText>
-            </Section>
+            </Section> */}
             <Section>
             { isMobile ? (
                 <>
@@ -180,28 +218,50 @@ export const Content = ({ isMobile }) => {
                 ) :
                 (
                 <>
+                 <img 
+                        src={Illustrations.Pay}
+                        alt="An illustration of a woman with a credit card and cash"
+                    />
                     <SectionText>
                         <SectionHeader>Pay Your Bill</SectionHeader>
                         <SectionBodyCopy>You may be able to make your first month’s payment online, or you can wait for the bill to come in the mail.</SectionBodyCopy>
                     </SectionText>
-                    <img 
+                    {/* <img 
                         src={Illustrations.Pay}
                         alt="An illustration of a woman with a credit card and cash"
-                    />
+                    /> */}
                 </>
                 )}
                 </Section>
             <Section>
+            {isMobile ? (
+                <>
                 <img 
                         src={Illustrations.Success}
                         alt="An illustration of a woman jumping for joy, in front of a life-sized smartphone with a check mark"
                 />
                 <SectionText>
-
-                    <SectionHeader>You’re Covered!</SectionHeader>
-                    <SectionBodyCopy>You and your family can enjoy the peace of mind of knowing you have health insurance.</SectionBodyCopy>
+                <SectionHeader>You’re Covered!</SectionHeader>
+                <SectionBodyCopy>You and your family can enjoy the peace of mind of knowing you have health insurance.</SectionBodyCopy>
                 </SectionText>
+                </>
+                ) : (
+                    <>
+                <SectionText>
+
+                <SectionHeader>You’re Covered!</SectionHeader>
+                <SectionBodyCopy>You and your family can enjoy the peace of mind of knowing you have health insurance.</SectionBodyCopy>
+                </SectionText>
+                <img 
+                    src={Illustrations.Success}
+                    alt="An illustration of a woman jumping for joy, in front of a life-sized smartphone with a check mark"
+                />
+                    </>
+                )}
+                
             </Section>
+            <ContentBottomHeader>Need Help?</ContentBottomHeader>
+            <ContentBottomParagraph>Call <a href="#help">(800) 123-1612</a> or  <a href="#help">Find Local Help</a></ContentBottomParagraph>
         </ContentContainer>
     )
 }
