@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8e964da6.chunk.css",
+    "main.js": "/static/js/main.465ee282.chunk.js",
+    "main.js.map": "/static/js/main.465ee282.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d50eee57.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d50eee57.js.map",
+    "static/js/2.a9ee0626.chunk.js": "/static/js/2.a9ee0626.chunk.js",
+    "static/js/2.a9ee0626.chunk.js.map": "/static/js/2.a9ee0626.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.1dbbc8c8f22f93b0c83152760a524339.js": "/precache-manifest.1dbbc8c8f22f93b0c83152760a524339.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.8e964da6.chunk.css.map": "/static/css/main.8e964da6.chunk.css.map",
+    "static/js/2.a9ee0626.chunk.js.LICENSE.txt": "/static/js/2.a9ee0626.chunk.js.LICENSE.txt",
+    "static/media/apply.svg": "/static/media/apply.b98ca65c.svg",
+    "static/media/help.svg": "/static/media/help.f87d439c.svg",
+    "static/media/hero-image.svg": "/static/media/hero-image.bf406a95.svg",
+    "static/media/hospital.svg": "/static/media/hospital.ae946326.svg",
+    "static/media/pay.svg": "/static/media/pay.0ddb8d3f.svg",
+    "static/media/shop.svg": "/static/media/shop.40592418.svg",
+    "static/media/sign-up.svg": "/static/media/sign-up.0c5d33b7.svg",
+    "static/media/success.svg": "/static/media/success.dea03ebb.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d50eee57.js",
+    "static/js/2.a9ee0626.chunk.js",
+    "static/css/main.8e964da6.chunk.css",
+    "static/js/main.465ee282.chunk.js"
+  ]
+}
