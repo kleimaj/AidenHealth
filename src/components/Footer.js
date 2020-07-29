@@ -27,11 +27,19 @@ const FooterTop = styled.section`
     width: 70vw;
     height: 300px;
     border-bottom: 1px solid ${props => props.theme.blond};
+    
+    @media only screen and (max-width: 1024px) {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 `
 const FooterHeader = styled.h3`
     font-size: ${typeScale.header3};
     color: ${props => props.theme.blond};
     font-family: ${props => props.theme.displayFont};
+    @media only screen and (max-width: 1024px) {
+        margin: 0;
+    }
 `
 
 const FooterBottom = styled.nav`
@@ -41,6 +49,7 @@ const FooterBottom = styled.nav`
     justify-content: space-evenly;
     background: ${props => props.theme.primaryColorDarker};
     width: 70vw;
+    border-bottom: 1px solid #FFF0DB;
 `
 const NavGroups = styled.ul`
     display: flex;
@@ -50,17 +59,23 @@ const NavGroups = styled.ul`
     list-style-type: none;
     margin: 27px 0;
     padding: 0;
+    @media only screen and (max-width: 1024px) {
+        flex-wrap: wrap;
+        // flex-direction: column;
+    }
 `
 const NavGroup = styled.li`
     display: flex;
+    width: 300px;
     // justify-content:space-evenly;
     flex-direction: column;
     justify-content: flex-start;
-
+    padding: 12px 0;
 `
 const GroupHeader = styled.h5`
     color: ${props => props.theme.blond};
     font-size: ${typeScale.header5};
+    margin: 12px 0;
 `
 const LinkGroup = styled.ul`
     display: flex;
@@ -72,11 +87,15 @@ const LinkGroup = styled.ul`
 const Link = styled.li`
 color: ${props => props.theme.blond};
     p {
-        &:hover {
-            text-decoration: underline;
-            cursor: pointer;
-        }
+        cursor: pointer;
+        text-decoration: underline;
+        margin: 8px 0;
     }
+
+`
+const Copyright = styled.p`
+    color: ${props => props.theme.blond};
+    font-size: ${typeScale.copyrightText};
 
 `
 
@@ -105,7 +124,7 @@ export const Footer = () => {
                             <Link><p>Medicare Advantage</p></Link>
                             <Link><p>Individuals & Families</p></Link>
                             <Link><p>Businesses</p></Link>
-                            <Link><p>Discounts and Deals</p></Link>
+                            <Link><p>Discounts & Deals</p></Link>
                             <Link><p>COVID-19 Resources</p></Link>
                             <Link><p>Advanced Care</p></Link>
                         </LinkGroup>
@@ -142,6 +161,7 @@ export const Footer = () => {
                     </NavGroup>
                 </NavGroups>
             </FooterBottom>
+            <Copyright>&copy; Aiden Health 2020</Copyright>
         </FooterWrapper>
     );
 }
