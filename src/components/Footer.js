@@ -66,7 +66,7 @@ const NavGroups = styled.ul`
 `
 const NavGroup = styled.li`
     display: flex;
-    width: 300px;
+    width: 200px;
     // justify-content:space-evenly;
     flex-direction: column;
     justify-content: flex-start;
