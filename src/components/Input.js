@@ -12,6 +12,10 @@ const INPUT_MODIFIERS = {
     `,
     large:() => `
         width: 300px;
+        @media only screen and (max-width: 1200px) { 
+            width: 210px;
+        }
+
     `
 }
 const FORM_MODIFIERS = {

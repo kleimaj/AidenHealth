@@ -31,6 +31,11 @@ const FooterTop = styled.section`
     @media only screen and (max-width: 1024px) {
         flex-wrap: wrap;
         justify-content: space-between;
+        align-content: space-evenly;
+        width: 90vw;
+        .form {
+            margin: 0 auto;
+        }
     }
 `
 const FooterHeader = styled.h3`
@@ -39,6 +44,10 @@ const FooterHeader = styled.h3`
     font-family: ${props => props.theme.displayFont};
     @media only screen and (max-width: 1024px) {
         margin: 0;
+        text-align: center;
+    }
+    @media only screen and (min-width: 1600px) { 
+        font-size: ${typeScale.header2};
     }
 `
 
@@ -106,7 +115,7 @@ export const Footer = () => {
         <FooterWrapper>
             <FooterTop>
                 <FooterHeader>Become a friend of Aiden</FooterHeader>
-                <div>
+                <div className="form">
                 <Label htmlFor="email" modifiers={["onDark"]}>Email</Label>
                 <Input 
                     type="text" 
