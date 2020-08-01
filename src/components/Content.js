@@ -45,14 +45,17 @@ font-family: ${props => props.theme.displayFont};
     background-color: #FF6584;
 }
 `
-const ContentBottomHeader = styled.h5`
-font-size: ${typeScale.header5};
+const ContentBottomHeader = styled.h4`
+font-size: ${typeScale.header4};
+margin: 0;
 @media only screen and (min-width: 1600px) { 
-    font-size: ${typeScale.header4};
+    font-size: ${typeScale.header3};
+    margin: 0;
 }
 @media only screen and (max-width: 1024px) {
     font-size: ${typeScale.header5};
     margin: 0 auto;
+    margin: 0;
     text-align: center;
     padding: 15px;
 }
@@ -62,7 +65,7 @@ position: relative;
 font-family: ${props => props.theme.primaryFont};
 `
 const ContentBottomParagraph = styled.p`
-font-size: ${typeScale.paragraph};
+font-size: ${typeScale.header5};
 @media only screen and (min-width: 1600px) { 
     font-size: ${typeScale.header5};
 }
