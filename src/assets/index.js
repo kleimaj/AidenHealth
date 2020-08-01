@@ -11,6 +11,7 @@ export * from './icons/logo';
 export * from './icons/close-icon';
 export * from './icons/hamburger-icon';
 export * from './icons/badges';
+export * from './icons/quote';
 
 export const Illustrations = {
     SignUp,
@@ -20,5 +21,5 @@ export const Illustrations = {
     Help,
     Pay,
     Success,
-    Hospital
+    Hospital,
 };

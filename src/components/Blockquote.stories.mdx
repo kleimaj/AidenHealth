@@ -1,0 +1,23 @@
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
+import { action } from "@storybook/addon-actions";
+import { withKnobs, boolean } from "@storybook/addon-knobs";
+import { Blockquote } from "./Blockquote";
+
+<Meta title="Design System/Components/Quotes" component={Blockquote} />
+
+# Quotes
+
+Quote elements indicate that the enclosed text is a quotation. 
+
+## Usage
+
+Use quotes to emphasize excerpts of text. Since users almost never read but scan, we need to provide them with some focus anchors to fix their attention to the most important parts of our articles. Furthermore, quotes are always used for testimonials and sometimes for blog comments.
+
+## Blockquote
+
+
+<Preview withToolbar>
+  <Story name="Blockquote">
+    <Blockquote />
+  </Story>
+</Preview>
