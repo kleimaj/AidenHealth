@@ -107,13 +107,13 @@ export const Footer = () => {
             <FooterTop>
                 <FooterHeader>Become a friend of Aiden</FooterHeader>
                 <div>
-                <Label for="email" modifiers={["onDark"]}>Email</Label>
+                <Label htmlFor="email" modifiers={["onDark"]}>Email</Label>
                 <Input 
                     type="text" 
                     id="email" 
                     aria-label="Email" 
                     placeholder="Email"
-                    modifiers={["onDark"]} />
+                    modifiers={["onDark", "large"]} />
                 </div>
             </FooterTop>
             <FooterBottom>
