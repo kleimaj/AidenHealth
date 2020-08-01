@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { typeScale } from "../utils";
 import { Illustrations } from '../assets';
 import { PrimaryButton } from './Buttons';
+import { Blockquote } from './Blockquote';
 
 const AboutWrapper = styled.article`
     display: flex;
@@ -56,16 +57,19 @@ font-family: ${props => props.theme.displayFont};
 `
 
 const Body = styled.p`
-    font-size: ${typeScale.paragraph};
+    font-size: ${typeScale.header5};
+    width: 700px;
     @media only screen and (min-width: 1600px) { 
-        font-size: ${typeScale.header5};
-        width: 500px;
+        font-size: ${typeScale.header4};
+        width: 800px;
         // line-height: 3rem;
         line-height: 2rem;
 
     }
     @media only screen and (max-width: 1024px) {
         margin: 0 auto;
+        font-size: ${typeScale.paragraph};
+        width: 300px;
         text-align: center;
         padding: 15px;
         line-height: 2rem;
@@ -74,6 +78,23 @@ const Body = styled.p`
     text-align: center;
     position: relative;
     font-family: ${props => props.theme.primaryFont};
+`
+const Quotes = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 100px;
+    padding-bottom: 2rem;
+    width: 100vw;
+    @media only screen and (max-width: 1024px) {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    @media only screen and (min-width: 1600px) { 
+        // width: 70vw;
+        justify-content: space-evenly;
+    }
 `
 
 export const About = () => {
@@ -86,6 +107,12 @@ export const About = () => {
             />
             <Body>Aiden Health, founded in 2014, provides health care services designed to meet the unique and changing needs of all we serve.</Body>
             <PrimaryButton modifiers="large">Learn More</PrimaryButton>
+            <Quotes>
+                <Blockquote name={"Uyen Lam"}
+                            bio={"Founding partner of Aiden Health"} />
+                <Blockquote member={1}
+                            content={"I went online and found a doctor that's close to my office - it was so easy. I recommend Aiden to all of my family and friends!"} />
+            </Quotes>
         </AboutWrapper>
     );
 }

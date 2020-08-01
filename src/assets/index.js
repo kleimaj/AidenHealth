@@ -7,6 +7,8 @@ import Pay from './illustrations/pay.svg';
 import Success from './illustrations/success.svg';
 import Hospital from './illustrations/hospital.svg';
 
+import Persona from './personas/persona1.svg';
+
 export * from './icons/logo';
 export * from './icons/close-icon';
 export * from './icons/hamburger-icon';
@@ -22,4 +24,5 @@ export const Illustrations = {
     Pay,
     Success,
     Hospital,
+    Persona
 };
