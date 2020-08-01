@@ -109,9 +109,10 @@ export const About = () => {
             <PrimaryButton modifiers="large">Learn More</PrimaryButton>
             <Quotes>
                 <Blockquote name={"Uyen Lam"}
-                            bio={"Founding partner of Aiden Health"} />
-                <Blockquote member={1}
-                            content={"I went online and found a doctor that's close to my office - it was so easy. I recommend Aiden to all of my family and friends!"} />
+                            bio={"Founding partner of Aiden Health"}
+                            member={1}
+                            content={"A part of the reason we decided to start Aiden Health was to make healthcare more accessible to younger and older individuals."} />
+                <Blockquote />
             </Quotes>
         </AboutWrapper>
     );

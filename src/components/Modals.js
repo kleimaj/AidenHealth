@@ -15,7 +15,7 @@ const ModalWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    // position: absolute;
     z-index: 7;
     border-radius: 2px;
 `

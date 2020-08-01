@@ -36,7 +36,7 @@ const Profile = styled.div`
     align-items: center;
     justify-content: flex-start;
 `
-const Persona = styled.div`
+const Persona2 = styled.div`
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -44,7 +44,7 @@ const Persona = styled.div`
     background-position: center;
     background-size: cover;
 `
-const Persona2 = styled.div`
+const Persona = styled.div`
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -74,7 +74,7 @@ export const Blockquote = (props) => {
         <Wrapper>
             <Body>
                 <Quote />
-                <p>{ props.content || 'A part of the reason we decided to start Aiden Health was to make healthcare more accessible to younger and older individuals.'}</p>
+                <p>{ props.content || "I went online and found a doctor that's close to my office - it was so easy. I recommend Aiden to all of my family and friends!"}</p>
             </Body>
             <Profile>
                 { props.member ? <Persona /> : <Persona2 />}
