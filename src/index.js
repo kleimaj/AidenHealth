@@ -86,7 +86,9 @@ const App = () => {
         showMenu={showMenu} 
         setShowMenu={setShowMenu}
         showModal={showModal}
-        setShowModal={setShowModal} />
+        setShowModal={setShowModal}
+        useDarkTheme={useDarkTheme}
+        setUseDarkTheme={setUseDarkTheme} />
       ):
       (
         null

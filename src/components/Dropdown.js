@@ -7,7 +7,8 @@ const DropdownWrapper = styled.div`
     // height: calc(100vh - 85px);
     // height: calc(100vh - 250px);
     // background-color: ${props => props.theme.primaryColorDarker};
-    background-color: #E7E7E7;
+    background-color: ${props => props.theme.dropdownColor};
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
     color: ${props => props.theme.textColorOnDark};
     display: flex;
     justify-content: space-between;
@@ -43,7 +44,7 @@ const DropdownWrapper = styled.div`
     }
 `
 
-export const Dropdown = ({ showMenu, setShowMenu, showModal, setShowModal }) => {
+export const Dropdown = ({ showMenu, setShowMenu, showModal, setShowModal, useDarkTheme, setUseDarkTheme }) => {
     const animation = useSpring({
         opacity: showMenu ? 1: 0,
         transform: showMenu ? `translateY(0)` : `translateY(-200%)`,
@@ -59,14 +60,26 @@ export const Dropdown = ({ showMenu, setShowMenu, showModal, setShowModal }) => 
                 flexDirection: 'column',
                 listStyle: 'none'
             }}>
-          <li><a href="#works"><TertiaryButton modifiers="navTertiary">
+          <li><a href="#works">
+              <TertiaryButton 
+                modifiers="navTertiary"
+                onClick={() => setShowMenu(!showMenu)} >
             How It Works
             </TertiaryButton></a></li>
-            <li><a href="#solutions"><TertiaryButton modifiers="navTertiary">
-            Solutions
-            </TertiaryButton></a></li>
-            <li><a href="#about"><TertiaryButton modifiers="navTertiary">
+            <li><a href="#about">
+                <TertiaryButton 
+                    onClick={() => setShowMenu(!showMenu)} 
+                    modifiers="navTertiary">
             About Us
+            </TertiaryButton></a></li>
+            <li><a href="#about">
+                <TertiaryButton 
+                onClick={() => {
+                    setShowMenu(!showMenu)
+                    setUseDarkTheme(!useDarkTheme)
+                }} 
+                modifiers="navTertiary">
+            { useDarkTheme ? 'Default Theme' : 'Dark Theme'}
             </TertiaryButton></a></li>
           <li style={{
               margin: '15px',
