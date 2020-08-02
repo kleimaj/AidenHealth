@@ -1,6 +1,6 @@
 import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
 import { withKnobs, boolean } from "@storybook/addon-knobs";
-import { SignUpModal } from "./Modals";
+import { SignUpModal, SignInModal } from "./Modals";
 
 <Meta title="Design System/Components/Modals" component={SignUpModal} />
 
@@ -21,3 +21,7 @@ The SignUpModal is used to prompt the user to create an account
     <SignUpModal showModal={boolean("Show Modal", true)} />
   </Story>
 </Preview>
+
+<Story name="signIn">
+  <SignInModal showModal={boolean("Show Modal", true)} />
+</Story>
