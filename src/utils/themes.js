@@ -4,7 +4,7 @@ import { primaryFont, displayFont } from "./typography";
 export const defaultTheme = {
     primaryColor: purple[200],
     primaryColorDarker: purple[400],
-    primaryColorHover: purple[150],
+    primaryColorHover: purple[450],
     primaryColorActive: purple[200],
     disabled: purple[100],
     textColorOnPrimary: neutral[600],

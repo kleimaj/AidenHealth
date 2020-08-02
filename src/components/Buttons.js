@@ -224,7 +224,7 @@ const BUTTON_MODIFIERS = {
 
     &:hover {
         background-color: none;
-        color: ${theme.primaryColorDarker};
+        color: ${theme.textColorInverted};
         transition: all 0.2s linear;
     }
 
@@ -247,14 +247,28 @@ const BUTTON_MODIFIERS = {
 
     &:hover {
         // color: ${theme.textColorInverted};
-        text-decoration: underline;
+        // text-decoration: underline;
         background: none;
         transition: all 0.2s linear;
 
     }
+    &:focus:after {
+        background: #F871AD;
+    }
+    &:active:after {
+        width: 100%;
+    }
 
     &:focus {
-        outline: 3px solid ${theme.textColorOnDark};
+        // outline: 3px solid ${theme.textColorOnDark};
+        background: none;
+        color: #F871AD;
+    }
+    &:active {
+        background: none;
+        border: none;
+        border-color: none;
+        outline: none;
     }
 
     `
@@ -273,7 +287,7 @@ const Button = styled.button`
 
     &:hover {
         background-color: ${props => props.theme.primaryColorHover};
-        color: ${props => props.theme.textColorOnPrimary};
+        color: ${props => props.theme.textColorInverted};
     }
 
     &:focus {
@@ -284,9 +298,9 @@ const Button = styled.button`
     }
     
     &:active {
-        background-color: ${props => props.theme.primaryColorActive};
         border-color: ${props => props.theme.primaryColorActive};
-        color: ${props => props.theme.textColor};
+        background-color: ${props => props.theme.primaryColorHover};
+        color: ${props => props.theme.textColorInverted};
     }
 `;
 
@@ -324,6 +338,44 @@ export const TertiaryButton = styled(Button)`
     background: none;
     border: none;
     color: ${props => props.theme.primaryColorDarker}; 
+    // color: ${props => props.theme.textColorOnDark};
+    transition: all 0.2s linear;
+
+    &:hover {
+        color: ${props => props.theme.primaryColor};
+        background: none;
+        transition: all 0.2s linear;
+
+    }
+
+    &:focus {
+        // outline: 3px solid ${props => props.theme.textColorOnDark};
+        border: none;
+        outline: none;
+        // border-bottom: 3px solid ${props => props.theme.primaryColorDarker};
+        transition: all 0.2s linear;
+    }
+
+    &:after {    
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: ${props => props.theme.primaryColor};
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
+      &:hover:after { 
+        width: 100%; 
+        left: 0; 
+      }
+      &:focus:after {
+          width: 100%;
+          left: 0;
+      }
 
     &:disabled {
         background: none;
