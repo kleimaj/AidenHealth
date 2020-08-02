@@ -16,7 +16,7 @@ const ModalWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // position: absolute;
+    position: absolute;
     z-index: 7;
     border-radius: 2px;
 `
@@ -55,7 +55,7 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-// position: absolute;
+position: absolute;
 z-index: 7;
 border-radius: 2px;
 `
@@ -88,10 +88,10 @@ export const SignUpModal = ({ showModal, setShowModal }) => {
         transform: showModal ? `translateY(0)` : `translateY(-200%)`,
         zIndex: showModal ? '2' : `-1`,
         config: config.stiff,
-        left: 'calc(25% - 150px)',
-        position: 'fixed',
+        // left: 'calc(25% - 150px)',
+        // position: 'fixed',
         // right: '0',
-        top: '100px',
+        // top: '100px',
         // margin: '0 auto',
         // textAlign: 'center',
     });
@@ -126,10 +126,10 @@ export const SignInModal = ({ showModal, setShowModal }) => {
         transform: showModal ? `translateY(0)` : `translateY(-200%)`,
         zIndex: showModal ? '2' : `-1`,
         config: config.stiff,
-        left: 'calc(25% - 150px)',
-        position: 'fixed',
+        // left: 'calc(25% - 150px)',
+        // position: 'fixed',
         // right: '0',
-        top: '100px',
+        // top: '100px',
         // margin: '0 auto',
         // textAlign: 'center',
     });
