@@ -8,8 +8,15 @@ const INPUT_MODIFIERS = {
         border-radius: 0px;
         color: #FFF5C7;
         background: none;
-        padding: 12px 0;
+        padding: 12px 12px;
     `,
+    large:() => `
+        width: 300px;
+        @media only screen and (max-width: 1200px) { 
+            width: 210px;
+        }
+
+    `
 }
 const FORM_MODIFIERS = {
     onDark:() => `

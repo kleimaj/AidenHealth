@@ -39,7 +39,7 @@ const App = () => {
       }}>
       <SignUpModal showModal={showModal} setShowModal={setShowModal} />
 
-      <Navbar>
+      <Navbar >
         {/* <h1><a href="#aiden">Logo</a></h1> */}
         <h1><Logo></Logo></h1>
         {isMobile ? (
@@ -91,7 +91,7 @@ const App = () => {
         setShowModal={setShowModal} />
       <Summary />
       <Content isMobile={isMobile} />
-      <About />
+      <About  isMobile={isMobile} />
       <Footer />
       </div>
       <GlobalStyle />

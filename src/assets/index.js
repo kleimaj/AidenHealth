@@ -7,10 +7,19 @@ import Pay from './illustrations/pay.svg';
 import Success from './illustrations/success.svg';
 import Hospital from './illustrations/hospital.svg';
 
+import Persona from './personas/persona1.svg';
+
 export * from './icons/logo';
 export * from './icons/close-icon';
 export * from './icons/hamburger-icon';
 export * from './icons/badges';
+export * from './icons/quote';
+
+export * from './icons/social/facebook';
+export * from './icons/social/twitter';
+export * from './icons/social/youtube';
+export * from './icons/social/instagram';
+
 
 export const Illustrations = {
     SignUp,
@@ -20,5 +29,6 @@ export const Illustrations = {
     Help,
     Pay,
     Success,
-    Hospital
+    Hospital,
+    Persona
 };

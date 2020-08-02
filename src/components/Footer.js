@@ -2,6 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import { typeScale } from '../utils';
 import { Input, Label} from './Input';
+import {
+    Facebook,
+    Youtube,
+    Twitter,
+    Instagram
+} from '../assets';
 
 const FooterWrapper = styled.footer`
     display: flex;
@@ -31,6 +37,11 @@ const FooterTop = styled.section`
     @media only screen and (max-width: 1024px) {
         flex-wrap: wrap;
         justify-content: space-between;
+        align-content: space-evenly;
+        width: 90vw;
+        .form {
+            margin: 0 auto;
+        }
     }
 `
 const FooterHeader = styled.h3`
@@ -39,6 +50,10 @@ const FooterHeader = styled.h3`
     font-family: ${props => props.theme.displayFont};
     @media only screen and (max-width: 1024px) {
         margin: 0;
+        text-align: center;
+    }
+    @media only screen and (min-width: 1600px) { 
+        font-size: ${typeScale.header2};
     }
 `
 
@@ -66,7 +81,7 @@ const NavGroups = styled.ul`
 `
 const NavGroup = styled.li`
     display: flex;
-    width: 300px;
+    width: 200px;
     // justify-content:space-evenly;
     flex-direction: column;
     justify-content: flex-start;
@@ -96,7 +111,15 @@ color: ${props => props.theme.blond};
 const Copyright = styled.p`
     color: ${props => props.theme.blond};
     font-size: ${typeScale.copyrightText};
+`
 
+const SocialLinks = styled.div`
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem 0;
 `
 
 
@@ -106,14 +129,14 @@ export const Footer = () => {
         <FooterWrapper>
             <FooterTop>
                 <FooterHeader>Become a friend of Aiden</FooterHeader>
-                <div>
-                <Label for="email" modifiers={["onDark"]}>Email</Label>
+                <div className="form">
+                <Label htmlFor="email" modifiers={["onDark"]}>Email</Label>
                 <Input 
                     type="text" 
                     id="email" 
                     aria-label="Email" 
                     placeholder="Email"
-                    modifiers={["onDark"]} />
+                    modifiers={["onDark", "large"]} />
                 </div>
             </FooterTop>
             <FooterBottom>
@@ -161,6 +184,12 @@ export const Footer = () => {
                     </NavGroup>
                 </NavGroups>
             </FooterBottom>
+            <SocialLinks>
+            <Facebook />
+            <Youtube />
+            <Twitter />
+            <Instagram />
+            </SocialLinks>
             <Copyright>&copy; Aiden Health 2020</Copyright>
         </FooterWrapper>
     );
