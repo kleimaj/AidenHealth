@@ -1,8 +1,8 @@
-<svg width="450" height="426" viewBox="0 0 450 426" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M266.158 365.595C221.631 383.287 171.787 387.45 129.78 365.139C86.7471 342.282 60.5307 298.95 51.1118 251.375C41.1389 201.002 41.0226 142.774 78.6931 107.098C114.715 72.9838 169.864 90.9856 219.455 91.9461C274.002 93.0026 339.264 70.9374 373.437 112.807C408.593 155.88 387.698 219.89 365.867 271.331C347.155 315.425 310.953 347.796 266.158 365.595Z" fill="#FF91C2"/>
-<rect x="71.9878" y="113" width="294" height="234" fill="url(#pattern0)"/>
-<rect x="286.988" y="113" width="79" height="84" fill="#FF91C2"/>
-<rect x="71.9878" y="113" width="78" height="85" fill="#FF91C2"/>
+<svg width="453" height="432" viewBox="0 0 453 432" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M269.158 371.595C224.63 389.284 174.679 393.182 132.41 370.218C89.1081 346.693 62.5311 302.464 52.7683 254.034C42.4314 202.756 41.9249 143.557 79.458 107.539C115.348 73.0979 170.766 91.7686 220.498 93.0771C275.198 94.5163 340.488 72.5206 375.034 115.316C410.573 159.342 390.05 224.278 368.505 276.429C350.037 321.132 313.954 353.799 269.158 371.595Z" fill="#FF91C2"/>
+<rect x="74.9878" y="119" width="294" height="234" fill="url(#pattern0)"/>
+<rect x="290" y="115" width="82" height="89" fill="#FF91C2"/>
+<rect x="72" y="117" width="81" height="87" fill="#FF91C2"/>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0" transform="translate(-0.085034 -0.230769) scale(0.00168102 0.00211205)"/>
