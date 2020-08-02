@@ -10,6 +10,9 @@ import Hospital from './illustrations/hospital.svg';
 import Persona from './personas/persona1.svg';
 
 export * from './icons/logo';
+export * from './icons/logo-light';
+export * from './icons/logo-dark';
+
 export * from './icons/close-icon';
 export * from './icons/hamburger-icon';
 export * from './icons/badges';

@@ -12,7 +12,7 @@ import {
   Footer,
   SecondaryButton, 
   TertiaryButton } from './components';
-import { HamburgerIcon, Logo } from './assets';
+import { HamburgerIcon, LogoLight, LogoDark } from './assets';
 import { GlobalStyle, darkTheme, defaultTheme } from "./utils"
 import { useMediaQuery } from './hooks';
 
@@ -41,7 +41,13 @@ const App = () => {
 
       <Navbar >
         {/* <h1><a href="#aiden">Logo</a></h1> */}
-        <h1><Logo></Logo></h1>
+        {/* <h1><Logo></Logo></h1> */}
+        <a href="/" style={{
+          margin: '0',
+          padding: '0'
+        }}>
+        { useDarkTheme ? <LogoDark /> : <LogoLight /> }
+        </a>
         {isMobile ? (
           <HamburgerIcon 
             onClick={() => setShowMenu(!showMenu)} 
@@ -59,7 +65,8 @@ const App = () => {
             <li><a href="#dark"><TertiaryButton 
             modifiers="navTertiary"
             onClick={() => setUseDarkTheme(!useDarkTheme)}>
-            Dark Mode
+              { useDarkTheme ? "Default Theme" : "Dark Theme"}
+            {/* Dark Mode */}
             </TertiaryButton></a></li>
           <li><SecondaryButton 
             modifiers="navSecondary"

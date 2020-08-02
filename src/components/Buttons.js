@@ -188,9 +188,9 @@ const BUTTON_MODIFIERS = {
     navSecondary: ({theme}) => `
     // border: 2px solid ${theme.textColorOnDark};
     // border-color: ${theme.textColorOnDark};
-    // color: ${theme.textColorOnDark};
-    border: 2px solid ${theme.primaryColorDarker};
-    border-color: ${theme.primaryColorDarker};
+    color: ${theme.invertedNavColor};
+    border: 2px solid ${theme.navText};
+    border-color: ${theme.navText};
     margin: 0 35px;
     transition: all 0.2s linear;
 
@@ -202,7 +202,7 @@ const BUTTON_MODIFIERS = {
     }
 
     &:focus {
-        outline: 3px solid ${theme.primaryColorDarker};
+        outline: 3px solid ${theme.navText};
         background-color: ${theme.textColorOnDark};
         color: ${theme.primaryColorDarker};
     }
@@ -214,10 +214,10 @@ const BUTTON_MODIFIERS = {
     }
     `,
     navSecondaryInverted: ({ theme }) => `
-    border: 2px solid ${theme.primaryColorDarker};
-    border-color: ${theme.primaryColorDarker};
-    background-color: ${theme.primaryColorDarker};
-    color: ${theme.blond};
+    border: 2px solid ${theme.navText};
+    border-color: ${theme.navText};
+    background-color: ${theme.navText};
+    color: ${theme.invertedButtonText};
     margin: 0 15px;
     transition: all 0.2s linear;
 
@@ -243,6 +243,7 @@ const BUTTON_MODIFIERS = {
     navTertiary: ({ theme }) => `
     background: none;
     // color: ${theme.textColorOnDark};
+    color: ${theme.navText};
     transition: all 0.2s linear;
 
     &:hover {
