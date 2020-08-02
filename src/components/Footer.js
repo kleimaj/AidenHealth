@@ -2,6 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import { typeScale } from '../utils';
 import { Input, Label} from './Input';
+import {
+    Facebook,
+    Youtube,
+    Twitter,
+    Instagram
+} from '../assets';
 
 const FooterWrapper = styled.footer`
     display: flex;
@@ -105,7 +111,15 @@ color: ${props => props.theme.blond};
 const Copyright = styled.p`
     color: ${props => props.theme.blond};
     font-size: ${typeScale.copyrightText};
+`
 
+const SocialLinks = styled.div`
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem 0;
 `
 
 
@@ -170,6 +184,12 @@ export const Footer = () => {
                     </NavGroup>
                 </NavGroups>
             </FooterBottom>
+            <SocialLinks>
+            <Facebook />
+            <Youtube />
+            <Twitter />
+            <Instagram />
+            </SocialLinks>
             <Copyright>&copy; Aiden Health 2020</Copyright>
         </FooterWrapper>
     );

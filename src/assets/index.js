@@ -15,6 +15,12 @@ export * from './icons/hamburger-icon';
 export * from './icons/badges';
 export * from './icons/quote';
 
+export * from './icons/social/facebook';
+export * from './icons/social/twitter';
+export * from './icons/social/youtube';
+export * from './icons/social/instagram';
+
+
 export const Illustrations = {
     SignUp,
     HeroImage,

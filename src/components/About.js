@@ -57,7 +57,8 @@ font-family: ${props => props.theme.displayFont};
 `
 
 const Body = styled.p`
-    font-size: ${typeScale.header5};
+    font-size: ${typeScale.header4};
+    line-height: 2rem;
     width: 700px;
     @media only screen and (min-width: 1600px) { 
         font-size: ${typeScale.header4};
@@ -97,7 +98,7 @@ const Quotes = styled.div`
     }
 `
 
-export const About = () => {
+export const About = ({ isMobile }) => {
     return (
         <AboutWrapper>
             <Header>Who We Are</Header>
@@ -106,7 +107,7 @@ export const About = () => {
                 alt="An illustration of a hospital."
             />
             <Body>Aiden Health, founded in 2014, provides health care services designed to meet the unique and changing needs of all we serve.</Body>
-            <PrimaryButton modifiers="large">Learn More</PrimaryButton>
+            { isMobile ? <PrimaryButton>Learn More</PrimaryButton> : <PrimaryButton modifiers="large">Learn More</PrimaryButton>}
             <Quotes>
                 <Blockquote name={"Uyen Lam"}
                             bio={"Founding partner of Aiden Health"}
