@@ -11,7 +11,7 @@ const AboutWrapper = styled.article`
     align-items: center;
     justify-content: space-evenly;
 
-    background: ${props => props.theme.blondBackground};
+    background: ${props => props.theme.blond};
 
     position: relative;
     top: 400px;

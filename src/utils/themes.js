@@ -1,4 +1,4 @@
-import { purple, neutral, yellow, red, green, blond } from "./colors";
+import { purple, neutral, yellow, red, green, blond, hotPink } from "./colors";
 import { primaryFont, displayFont } from "./typography";
 
 export const defaultTheme = {
@@ -15,10 +15,12 @@ export const defaultTheme = {
     blond: blond[500],
     gray: neutral[400],
     navColor: neutral[100],
+    hyperlinkColor: purple[200],
     invertedNavColor: purple[400],
     textColor: neutral[600],
     textColorInverted: neutral[100],
     textDark: neutral[600],
+    darkToBlond: neutral[600],
     textOnDisabled: neutral[300],
     formElementBackground: neutral[100],
     textOnFormElementBackground: neutral[600],
@@ -40,7 +42,7 @@ export const defaultTheme = {
 export const darkTheme = {
     primaryColor: neutral[100],
     primaryColorDarker: purple[400],
-    primaryColorHover: neutral[200],
+    primaryColorHover: purple[450],
     primaryColorActive: neutral[100],
     navText: blond[500],
     invertedButtonText: purple[400],
@@ -50,12 +52,14 @@ export const darkTheme = {
     blond: blond[500],
     gray: neutral[500],
     navColor: purple[400],
+    hyperlinkColor: hotPink[200],
     invertedNavColor: blond[500],
     textColorOnDark: purple[400],
     textColor: purple[300],
-    textColorInverted: neutral[500],
+    textColorInverted: neutral[100],
     textOnDisabled: neutral[300],
     textDark: neutral[600],
+    darkToBlond: blond[500],
     formElementBackground: purple[400],
     textOnFormElementBackground: neutral[100],
     primaryFont,
