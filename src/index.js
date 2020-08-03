@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { ThemeProvider } from 'styled-components';
 import { 
   SignUpModal,
+  SignInModal,
   Navbar, 
   Dropdown, 
   Header,
@@ -21,6 +22,7 @@ const App = () => {
   const [useDarkTheme, setUseDarkTheme] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
+  const [showSignIn, setShowSignIn] = useState(false);
   // If true, it's a mobile dimensions
   const isMobile = useMediaQuery('(max-width: 1024px)');
   // If true, it's larger than a laptop
@@ -37,7 +39,8 @@ const App = () => {
           justifyContent: "space-around",
           flexDirection: "column"
       }}>
-      <SignUpModal showModal={showModal} setShowModal={setShowModal} />
+      <SignUpModal showModal={showModal} setShowModal={setShowModal} isMobile={isMobile} />
+      <SignInModal showModal={showSignIn} setShowModal={setShowSignIn} />
 
       <Navbar >
         {/* <h1><a href="#aiden">Logo</a></h1> */}
@@ -70,12 +73,18 @@ const App = () => {
             </TertiaryButton></a></li>
           <li><SecondaryButton 
             modifiers="navSecondary"
-            onClick={() => setShowModal(!showModal)}>
+            onClick={() => {
+              setShowModal(false)
+              setShowSignIn(!showSignIn);
+              }}>
               Log In
             </SecondaryButton></li>
           <li><SecondaryButton 
           modifiers="navSecondaryInverted"
-          onClick={() => setShowModal(!showModal)}>
+          onClick={() => {
+            setShowModal(!showModal)
+            setShowSignIn(false)
+            }}>
             Sign Up
           </SecondaryButton></li>
         </ul>

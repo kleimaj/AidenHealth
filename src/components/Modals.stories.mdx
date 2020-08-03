@@ -16,9 +16,9 @@ Use modals to call the user to action or complete a task
 
 The SignUpModal is used to prompt the user to create an account
 
-<Preview withToolbar>
+<Preview>
   <Story name="signUp">
-    <SignUpModal showModal={boolean("Show Modal", true)} />
+    <SignUpModal showModal={boolean("Show Modal", true)} storyBook={true} modifiers="storybookView" />
   </Story>
 </Preview>
 
@@ -27,5 +27,5 @@ The SignUpModal is used to prompt the user to create an account
 The SignInModal is used to prompt the user to sign in or create an account. This modal contains a form field for users to input data.
 
 <Story name="signIn">
-  <SignInModal showModal={boolean("Show Modal", true)} />
+  <SignInModal showModal={boolean("Show Modal", true)} storyBook={true} modifiers="storybookView" />
 </Story>

@@ -5,7 +5,13 @@ import { useSpring, animated, config } from 'react-spring';
 import { Illustrations, CloseIcon } from '../assets';
 import { PrimaryButton, SecondaryButton } from './Buttons';
 import { Input, Label } from './Input';
+import { applyStyleModifiers } from "styled-components-modifiers";
 
+const MODAL_MODIFIERS = {
+    mobileView:() => `
+        width: 300px;
+    `,
+}
 const ModalWrapper = styled.div`
     width: 800px;
     height: 580px;
@@ -19,6 +25,10 @@ const ModalWrapper = styled.div`
     position: absolute;
     z-index: 7;
     border-radius: 2px;
+    // @media only screen and (max-width: 1200px) { 
+    //     width: 300px;
+    // }
+    ${applyStyleModifiers(MODAL_MODIFIERS)};
 `
 const SignUpHeader = styled.h3`
     font-size: ${typeScale.header3};
@@ -58,6 +68,12 @@ align-items: center;
 position: absolute;
 z-index: 7;
 border-radius: 2px;
+
+// @media only screen and (max-width: 1200px) { 
+//     width: 300px;
+// }
+${applyStyleModifiers(MODAL_MODIFIERS)};
+
 `
 export const FormContainer = styled.form`
 height: 400px;
@@ -82,30 +98,51 @@ export const ButtonGroup = styled.div`
     }
 `
 
-export const SignUpModal = ({ showModal, setShowModal }) => {
+export const SignUpModal = ({ showModal, setShowModal, isMobile, storyBook }) => {
     const animation = useSpring({
         opacity: showModal ? 1: 0,
         transform: showModal ? `translateY(0)` : `translateY(-200%)`,
         zIndex: showModal ? '2' : `-1`,
         config: config.stiff,
-        // left: 'calc(25% - 150px)',
-        // position: 'fixed',
-        // right: '0',
-        // top: '100px',
+        left: 'calc(35% - 100px)',
+        position: storyBook ? 'relative' : 'fixed',
+        // position: isMobile ? 'relative' : 'fixed',
+        right: '0',
+        top: '100px',
         // margin: '0 auto',
         // textAlign: 'center',
     });
     return (
         <animated.div style={animation}>
-        <ModalWrapper>
-            <img 
+        <ModalWrapper
+            modifiers={isMobile ? ['mobileView'] : []}>
+        { isMobile ?
+        <img 
+        src={Illustrations.SignUp} 
+        alt="Sign up for an account" 
+        aria-hidden="true" 
+        style={{
+            width: '300px'
+        }}
+    />
+        : 
+        <img 
+        src={Illustrations.SignUp} 
+        alt="Sign up for an account" 
+        aria-hidden="true" 
+        style={{
+            width: '450px'
+        }}
+    />
+        }
+            {/* <img 
                 src={Illustrations.SignUp} 
                 alt="Sign up for an account" 
                 aria-hidden="true" 
                 style={{
                     width: '450px'
                 }}
-            />
+            /> */}
             <SignUpHeader>Sign Up</SignUpHeader>
             <SignUpText>Sign up today to get access!</SignUpText>
             <PrimaryButton>Sign up!</PrimaryButton>
@@ -120,31 +157,33 @@ export const SignUpModal = ({ showModal, setShowModal }) => {
     )
 }
 
-export const SignInModal = ({ showModal, setShowModal }) => {
+export const SignInModal = ({ showModal, setShowModal, isMobile, storyBook }) => {
     const animation = useSpring({
         opacity: showModal ? 1: 0,
         transform: showModal ? `translateY(0)` : `translateY(-200%)`,
         zIndex: showModal ? '2' : `-1`,
         config: config.stiff,
-        // left: 'calc(25% - 150px)',
-        // position: 'fixed',
-        // right: '0',
-        // top: '100px',
+        left: 'calc(35% - 200px)',
+        position: storyBook ? 'relative' : 'fixed',
+        // position: isMobile ? 'fixed' : 'relative',
+        right: '0',
+        top: '100px',
         // margin: '0 auto',
         // textAlign: 'center',
     });
     return (
         <animated.div style={animation}>
-        <SignInWrapper>
+        <SignInWrapper
+            modifiers={isMobile ? ['mobileView'] : []}>
             <FormContainer>
             <SignUpHeader>Sign In</SignUpHeader>
             <div>
-            <Label for="email">Email</Label>
-            <Input type="text" id="email" aria-label="email input" placeholder="email@example.com" modifiers="large" />
+            <Label htmlFor="email_modal">Email</Label>
+            <Input type="text" id="email_modal" aria-label="email input" placeholder="email@example.com" modifiers="large" />
             </div>
             <div>
-            <Label for="password">Password</Label>
-            <Input type="password" id="password" aria-label="password input" placeholder="password" modifiers="large" />
+            <Label htmlFor="password">Password</Label>
+            <Input type="password" id="password" autocomplete="on" aria-label="password input" placeholder="password" modifiers="large" />
             </div>
             <ButtonGroup>
                 <SecondaryButton>Sign up</SecondaryButton>
