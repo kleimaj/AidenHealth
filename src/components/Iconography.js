@@ -9,8 +9,8 @@ import {
 
 const Wrapper = styled.div`
 display: flex;
-width: 100vw;
-align-items: center;
+// width: 100vw;
+align-items: flex-start;
 justify-content: space-evenly;
 flex-wrap: wrap;
 flex-direction: row;
