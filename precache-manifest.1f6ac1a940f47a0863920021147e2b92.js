@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9ffdf83b7ea9b03e8be17a746268d9e8",
+    "revision": "7edcde549ba7228b2b075dec8710d8f7",
     "url": "/AidenHealth/index.html"
   },
   {
-    "revision": "75d316f0e779c279c782",
+    "revision": "0a4577f81c9b08ed07bf",
     "url": "/AidenHealth/static/css/main.8e964da6.chunk.css"
   },
   {
-    "revision": "f13eb501b6f01df6fda6",
-    "url": "/AidenHealth/static/js/2.381b83c7.chunk.js"
+    "revision": "c0869da830e5f0b56624",
+    "url": "/AidenHealth/static/js/2.7cac2b0e.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/AidenHealth/static/js/2.381b83c7.chunk.js.LICENSE.txt"
+    "url": "/AidenHealth/static/js/2.7cac2b0e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "75d316f0e779c279c782",
-    "url": "/AidenHealth/static/js/main.e8d3a50a.chunk.js"
+    "revision": "0a4577f81c9b08ed07bf",
+    "url": "/AidenHealth/static/js/main.61e3d0a5.chunk.js"
   },
   {
     "revision": "8905e9cff23ee8c2c5b8",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/AidenHealth/static/media/help.f87d439c.svg"
   },
   {
-    "revision": "bf406a95be2d19807b114d25e4e9c4c8",
-    "url": "/AidenHealth/static/media/hero-image.bf406a95.svg"
+    "revision": "c421ab315ee98447708004e2c04ce434",
+    "url": "/AidenHealth/static/media/hero-image.c421ab31.svg"
   },
   {
     "revision": "ad4b24a723110fb525a166e1ca66730e",
@@ -48,12 +48,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/AidenHealth/static/media/persona1.3bff383f.svg"
   },
   {
-    "revision": "40592418d605ca6d3beed1583e86a8ec",
-    "url": "/AidenHealth/static/media/shop.40592418.svg"
+    "revision": "bfaa4f572837563fb40e22d0785f0591",
+    "url": "/AidenHealth/static/media/shop.bfaa4f57.svg"
   },
   {
-    "revision": "0c5d33b71cb5a4fef14e63b46e36c040",
-    "url": "/AidenHealth/static/media/sign-up.0c5d33b7.svg"
+    "revision": "97c7134b8ba21151fef9ae40af0aedad",
+    "url": "/AidenHealth/static/media/sign-in.97c7134b.svg"
+  },
+  {
+    "revision": "84a2efc2fa528d105afa9e993db1fce1",
+    "url": "/AidenHealth/static/media/sign-up.84a2efc2.svg"
   },
   {
     "revision": "dea03ebb382f922292e0637266144fdb",
