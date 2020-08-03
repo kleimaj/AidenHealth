@@ -8,7 +8,7 @@ const PercentIconWrapper = styled.div`
 
 export const PercentIcon=() => (
     <PercentIconWrapper aria-hidden="true">
-<svg version="1.1" id="Layer_1" focusable="false" xmlns="http://www.w3.org/2000/svg"
+<svg version="1.1" focusable="false" xmlns="http://www.w3.org/2000/svg"
 	 x="0px" y="0px" width="100px" viewBox="0 0 595.279 841.891" enableBackground="new 0 0 595.279 841.891">
 <path fill="#7280FF" d="M595.28,420.945c0-43.833-27.555-81.27-66.387-95.803c17.091-37.67,10.23-83.595-20.812-114.638
 	c-31.043-31.043-76.968-37.903-114.638-20.812c-14.533-38.833-51.971-66.388-95.803-66.388s-81.27,27.555-95.803,66.388
