@@ -1,0 +1,27 @@
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
+import { withKnobs, boolean } from "@storybook/addon-knobs";
+import { Colors } from "./Colors";
+import image from './images/color2.png';
+import image2 from './images/color1.png';
+
+<Meta title="Design System/Design/Colors" component={Colors} />
+
+# The Color Themes
+
+Color themes are designed to be harmonious, ensure accessible text, and distinguish UI elements and surfaces from one another.
+
+<Preview withToolbar>
+  <Story name="Colors">
+      <Colors />
+  </Story>
+</Preview>
+
+Color themes are applied to various site font colors and illustrations to a cohesive brand identity.
+
+<img src={image2} />
+
+## Dark primary variants
+
+Primary color can be used to make a color theme for your apps: including dark and light primary color variants. Aiden Health utilizes a secondary color as the text on primary.
+
+<img src={image} />
