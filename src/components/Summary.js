@@ -59,6 +59,7 @@ const SummaryTitle = styled.h2`
 `
 
 export const Summary = () => {
+    
     return (
         <SummaryWrapper>
             <SummaryTitle>We can promise you this:</SummaryTitle>

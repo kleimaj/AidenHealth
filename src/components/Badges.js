@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import useInView from 'react-cool-inview';
 import { typeScale } from "../utils";
 import { PlusIcon, PercentIcon, CheckIcon } from '../assets/';
 
@@ -12,9 +13,15 @@ const BadgesWrapper = styled.div`
         margin: 0 auto;
         flex-direction: column;
     }
+    .fade-in {
+        opacity: 1;
+    }
 `;
 
 const Badge = styled.div`
+transition: all 0.5s ease-in-out;
+transition-delay: .${props => props.delay}5s;
+    opacity: 0;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -25,10 +32,6 @@ const Badge = styled.div`
     svg {
         width: 65px;
     }
-    // &:hover {
-    //     transition: all 0.2s linear;
-    //     transform: translateY(-10px);
-    // }
     // Mobile
     @media only screen and (max-width: 1024px) {
         // padding: 25px;
@@ -48,6 +51,7 @@ const Badge = styled.div`
         // padding: 0 300px;
         padding: 0 50px;
     }
+
 `;
 
 const Title = styled.h3`
@@ -78,21 +82,27 @@ const Body = styled.p`
 `
 
 export const Badges = () => {
+    const { ref, inView } = useInView({
+        // Stop observe when the target enters the viewport, so the "inView" only triggered once
+        unobserveOnEnter: false,
+        // Shrink the root margin, so the animation will be triggered once the target reach a fixed amount of visible
+        rootMargin: "-100px 0px",
+      });
     //  Qualify for Discounts.
     // Ensure great health coverage.
     return (
-        <BadgesWrapper>
-            <Badge>
+        <BadgesWrapper ref={ref} >
+            <Badge className={inView ? 'fade-in' : ''} delay={2}>
                 <PlusIcon />
                 <Title>ACA Compliant Plans.</Title>
                 <Body>Aiden is the place where you can get brand-name health insurance under the Patient Protection and Affordable Care Act.</Body>
             </Badge>
-            <Badge>
+            <Badge className={inView ? 'fade-in' : ''} delay={4}>
                 <PercentIcon/>
                 <Title>Quality Discounts.</Title>
                 <Body>Our developed provider offers high-quality, cost-effective discounts and access to physicians and hospitals throughout the USA.</Body>
             </Badge>
-            <Badge>
+            <Badge className={inView ? 'fade-in' : ''} delay={6}>
                 <CheckIcon/>
                 <Title>Great health coverage.</Title>
                 <Body>We offer a broad spectrum of health and wellness programs to ensure our members a healthy plan at every stage in life.</Body>
