@@ -84,7 +84,7 @@ const Body = styled.p`
 export const Badges = () => {
     const { ref, inView } = useInView({
         // Stop observe when the target enters the viewport, so the "inView" only triggered once
-        unobserveOnEnter: false,
+        unobserveOnEnter: true,
         // Shrink the root margin, so the animation will be triggered once the target reach a fixed amount of visible
         rootMargin: "-100px 0px",
       });
