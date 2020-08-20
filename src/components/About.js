@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { typeScale } from "../utils";
 import { Illustrations } from '../assets';
 import { PrimaryButton } from './Buttons';
-import { Blockquote } from './Blockquote';
+import { Testimonial } from './Testimonial';
 
 const AboutWrapper = styled.article`
     display: flex;
