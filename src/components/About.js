@@ -16,7 +16,7 @@ const AboutWrapper = styled.article`
     position: relative;
     top: 400px;
     width: 100vw;
-    padding: 24px 0;
+    padding: 24px;
     img {
         width: 300px;
         margin: 0;
@@ -54,6 +54,7 @@ font-family: ${props => props.theme.displayFont};
     z-index: 1;
     background-color: #FF6584;
 }
+padding: 12px;
 `
 
 const Body = styled.p`
@@ -101,7 +102,7 @@ const Quotes = styled.div`
 export const About = ({ isMobile }) => {
     return (
         <AboutWrapper>
-            <Header>Who We Are</Header>
+            <Header>Who we are</Header>
             <img 
                 src={Illustrations.Hospital}
                 alt="An illustration of a hospital."

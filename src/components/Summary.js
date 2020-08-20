@@ -11,7 +11,7 @@ const SummaryWrapper = styled.article`
     justify-content: space-around;
     position: relative;
     width: 100vw;
-    padding: 0px 150px;
+    padding: 50px 150px;
     top: 400px;
     // padding-top: 300px;
     // margin-top: 100px;
@@ -56,6 +56,8 @@ const SummaryTitle = styled.h2`
         z-index: 1;
         background-color: #FF6584;
     }
+    // Sean's Feedback
+    padding: 12px;
 `
 
 export const Summary = () => {
