@@ -43,8 +43,6 @@ const App = () => {
       <SignInModal showModal={showSignIn} setShowModal={setShowSignIn} />
 
       <Navbar >
-        {/* <h1><a href="#aiden">Logo</a></h1> */}
-        {/* <h1><Logo></Logo></h1> */}
         <a href="https://jacobkleiman.com/AidenHealth/" style={{
           margin: '0',
           padding: '0'
