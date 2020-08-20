@@ -109,11 +109,11 @@ export const About = ({ isMobile }) => {
             <Body>Aiden Health, founded in 2014, provides health care services designed to meet the unique and changing needs of all we serve.</Body>
             { isMobile ? <PrimaryButton>Learn More</PrimaryButton> : <PrimaryButton modifiers="large">Learn More</PrimaryButton>}
             <Quotes>
-                <Blockquote name={"Uyen Lam"}
+                <Testimonial name={"Uyen Lam"}
                             bio={"Founding partner of Aiden Health"}
                             member={1}
                             content={"A part of the reason we decided to start Aiden Health was to make healthcare more accessible to younger and older individuals."} />
-                <Blockquote />
+                <Testimonial />
             </Quotes>
         </AboutWrapper>
     );
