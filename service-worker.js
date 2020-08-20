@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/AidenHealth/precache-manifest.c93abf4fde9dee4a0b31ade4dda3401a.js"
+  "/AidenHealth/precache-manifest.b4bc25f7278e7597edd6035454c72108.js"
 );
 
 self.addEventListener('message', (event) => {
