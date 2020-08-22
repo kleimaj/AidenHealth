@@ -17,11 +17,11 @@ export const blue = {
   }
   
   export const blond = {
-    100: "#EBEADF",
-    200: "#FEF5CA",
-    300: "#F0E798",
-    400: "#FFDBA9",
-    500: "#FFF0DB"
+      100: "#EBEADF",
+      200: "#FEF5CA",
+      300: "#F0E798",
+      400: "#FFDBA9",
+      500: "#FFF0DB"
   }
 
   export const hotPink = {
