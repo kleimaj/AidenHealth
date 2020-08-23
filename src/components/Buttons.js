@@ -310,7 +310,7 @@ export const PrimaryButton = styled(Button)`
 // CSS
     background-color: ${props => props.theme.primaryColor};
     border: none;
-    color: white;
+    color: black;
 
     &:disabled {
         background-color: ${props => props.theme.disabled};
