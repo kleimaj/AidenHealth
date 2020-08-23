@@ -1,7 +1,7 @@
 import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
 import { action } from "@storybook/addon-actions";
 import { withKnobs, boolean } from "@storybook/addon-knobs";
-import { Testimonial } from "./Testimonial";
+import { Testimonial } from "../components";
 
 <Meta title="Design System/Components/Testimonials" component={Testimonial} />
 
@@ -22,6 +22,10 @@ Use quotes to emphasize excerpts of text. Since users almost never read but scan
 
 <Preview withToolbar>
   <Story name="Testimonials">
-    <Blockquote />
+    <Testimonial 
+      name={"Marisa Tomei"}
+      bio={"Founding partner of Aiden Health"}
+      content={"A part of the reason we decided to start Aiden Health was to make healthcare more accessible to younger and older individuals."} 
+    />
   </Story>
 </Preview>

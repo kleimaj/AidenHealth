@@ -6,6 +6,7 @@ export * from './Header';
 export * from './Summary';
 export * from './Content';
 export * from './About';
-export * from './Typography';
 export * from './Footer';
 export * from './Input';
+export * from './Logos';
+export * from './Testimonial';
