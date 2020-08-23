@@ -32,6 +32,6 @@ export default create({
   inputBorderRadius: 4,
 
   brandTitle: "Aiden Health",
-  brandUrl: "https://jacobkleiman.com/AidenHealth",
-  brandImage: "https://potty-angel-react.s3-us-west-2.amazonaws.com/aiden-light.svg"
+  brandUrl: "https://aidenhealth.netlify.app/",
+  brandImage: "https://potty-angel-react.s3-us-west-2.amazonaws.com/Love.svg"
 });
