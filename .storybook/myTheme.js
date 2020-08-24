@@ -22,7 +22,7 @@ export default create({
 
   // Toolbar default and active colors
   barTextColor: "white",
-  barSelectedColor: "hotPink",
+  barSelectedColor: "white",
   barBg: "#202B8A",
 
   // Form colors
@@ -32,6 +32,6 @@ export default create({
   inputBorderRadius: 4,
 
   brandTitle: "Aiden Health",
-  brandUrl: "https://example.com",
-  brandImage: "https://potty-angel-react.s3-us-west-2.amazonaws.com/aiden-light.svg"
+  brandUrl: "https://aidenhealth.netlify.app/",
+  brandImage: "https://potty-angel-react.s3-us-west-2.amazonaws.com/Love.svg"
 });

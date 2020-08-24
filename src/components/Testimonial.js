@@ -69,7 +69,7 @@ const Bio = styled.div`
     }
 `
 
-export const Blockquote = (props) => {
+export const Testimonial = (props) => {
     return (
         <Wrapper>
             <Body>

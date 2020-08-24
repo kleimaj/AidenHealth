@@ -164,7 +164,7 @@ export const Footer = () => {
                         </LinkGroup>
                     </NavGroup>
                     <NavGroup>
-                        <GroupHeader>About Us</GroupHeader>
+                        <GroupHeader>About us</GroupHeader>
                         <LinkGroup>
                             <Link><p>Launch Story</p></Link>
                             <Link><p>20 Year Plan</p></Link>
@@ -175,7 +175,7 @@ export const Footer = () => {
                         </LinkGroup>
                     </NavGroup>
                     <NavGroup>
-                        <GroupHeader>Contact Us</GroupHeader>
+                        <GroupHeader>Contact us</GroupHeader>
                         <LinkGroup>
                             <Link><p>(800) 123-1612</p></Link>
                             <Link><p>Chat With Us</p></Link>

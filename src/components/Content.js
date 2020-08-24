@@ -46,6 +46,8 @@ font-family: ${props => props.theme.displayFont};
     z-index: 1;
     background-color: #FF6584;
 }
+// Seans' feedback
+padding: 12px;
 `
 const ContentBottomHeader = styled.h4`
 font-size: ${typeScale.header4};
@@ -53,6 +55,7 @@ margin: 0;
 @media only screen and (min-width: 1600px) { 
     font-size: ${typeScale.header3};
     margin: 0;
+    margin-top: 24px;
 }
 @media only screen and (max-width: 1024px) {
     font-size: ${typeScale.header5};
@@ -65,6 +68,7 @@ margin: 0;
 text-align: center;
 position: relative;
 font-family: ${props => props.theme.primaryFont};
+padding-top: 18px;
 `
 const ContentBottomParagraph = styled.p`
 font-size: ${typeScale.header5};
@@ -89,9 +93,9 @@ font-family: ${props => props.theme.primaryFont};
 export const Content = ({ isMobile }) => {
     return (
         <ContentContainer>
-            <ContentHeader>Only a Few Steps:</ContentHeader>
+            <ContentHeader>Only a few steps:</ContentHeader>
             <Section 
-                header={"1. Shop & Compare"}
+                header={"1. Shop & compare"}
                 body={"Long term healthily living and healthy diet adaption/ augmentation is the core goal."}
                 src={Illustrations.Shop}
                 alt={"An illustration of two people stuying a graph"}
@@ -99,7 +103,7 @@ export const Content = ({ isMobile }) => {
                 isMobile={isMobile}
             />
             <Section
-                header={"2. Apply Today"}
+                header={"2. Apply today"}
                 body={"You’ll need your income information, ID, proof of citizenship or lawful presence, Social Security number and ZIP code."}
                 src={Illustrations.Apply}
                 alt={"An illustration of a man filling out a form"}
@@ -107,7 +111,7 @@ export const Content = ({ isMobile }) => {
                 isMobile={isMobile}
             />
             <Section 
-                header={"3. Pay Your Bill"}
+                header={"3. Pay your bill"}
                 body={"Make your first month’s payment online, or you can wait for the bill to come in the mail."}
                 src={Illustrations.Pay}
                 alt={"An illustration of a woman with a credit card and cash"}
@@ -115,14 +119,14 @@ export const Content = ({ isMobile }) => {
                 isMobile={isMobile}
             />
            <Section 
-                header={"You’re Covered!"}
+                header={"You’re covered!"}
                 body={"You and your family can enjoy the peace of mind of knowing you have health insurance."}
                 src={Illustrations.Success}
                 alt={"An illustration of a woman jumping for joy, in front of a life-sized smartphone with a check mark"}
                 imageFirst={false}
                 isMobile={isMobile}
             />
-            <ContentBottomHeader>Need Help?</ContentBottomHeader>
+            <ContentBottomHeader>Need help?</ContentBottomHeader>
             <ContentBottomParagraph>Call <a href="#help">(800) 123-1612</a> or  <a href="#help">Find Local Help</a></ContentBottomParagraph>
         </ContentContainer>
     )

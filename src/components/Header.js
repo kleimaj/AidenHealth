@@ -15,9 +15,11 @@ const HeaderWrapper = styled.header`
     // margin-top: calc(10vh + 200px);
     // margin-top: 400px;
     margin-top: 100px;
+    padding-left: 50px;
     @media only screen and (min-width: 1600px) { 
         padding: 0 300px;
         margin-top: 100px;
+        padding-left: 100px;
     }
     @media only screen and (max-width: 1024px) {
         // height: 40vh;
@@ -88,7 +90,7 @@ export const Header = ({ isMobile, isDesktop, showModal, setShowModal }) => {
         return (
             <MobileHeaderWrapper>
                 <MobileCallToAction>
-                    Because Life Is Worth Living
+                    Because life is worth living
                 </MobileCallToAction>
                 <img 
                     src={Illustrations.HeroImage} 
@@ -118,7 +120,7 @@ export const Header = ({ isMobile, isDesktop, showModal, setShowModal }) => {
     return(
         <HeaderWrapper>
             <CallToAction>
-                Because Life Is Worth Living
+                Because life is worth living
             </CallToAction>
             <Subheader>
             Welcome to the only place where the quality of your health insurance 

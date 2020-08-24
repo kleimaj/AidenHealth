@@ -1,17 +1,21 @@
 import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
 import { action } from "@storybook/addon-actions";
 import { withKnobs, boolean } from "@storybook/addon-knobs";
-import { Input, Label, Error, Form} from "./Input";
+import { Input, Label, Error, Form} from "../components";
 
-<Meta title="Design System/Components/Form/Input" component={Input} />
+<Meta title="Components/Input" component={Input} />
 
 # Inputs
 
 The `<Input>` tag specifies an input field where the user can enter data.
 
+<br/>
+
 ## Usage
 
 Inputs allow users to enter text into a UI. They typically appear in forms and dialogs.
+
+<br/>
 
 ## Form Inputs
 
@@ -21,6 +25,9 @@ Inputs allow users to enter text into a UI. They typically appear in forms and d
     <Input type="text" id="example" aria-label="Example" placeholder="Example Placeholder" />
     </Form>
 </Story>
+
+<br/>
+
 
 ## Form Input on Primary
 <Story name="TextInput on Primary">
@@ -34,6 +41,9 @@ Inputs allow users to enter text into a UI. They typically appear in forms and d
         modifiers={["onDark"]} />
     </Form>
 </Story>
+
+<br/>
+
 
 ## Error Validation for TextInputs
 

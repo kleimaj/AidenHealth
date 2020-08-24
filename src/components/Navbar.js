@@ -37,6 +37,7 @@ export const Navbar = styled.nav`
     flex-direction: row;
     position: fixed;
     top: 0;
+    left: 0;
     justify-content: space-between;
     z-index: 5;
 

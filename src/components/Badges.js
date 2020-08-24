@@ -94,12 +94,12 @@ export const Badges = () => {
         <BadgesWrapper ref={ref} >
             <Badge className={inView ? 'fade-in' : ''} delay={2}>
                 <PlusIcon />
-                <Title>ACA Compliant Plans.</Title>
+                <Title>ACA compliant plans.</Title>
                 <Body>Aiden is the place where you can get brand-name health insurance under the Patient Protection and Affordable Care Act.</Body>
             </Badge>
             <Badge className={inView ? 'fade-in' : ''} delay={4}>
                 <PercentIcon/>
-                <Title>Quality Discounts.</Title>
+                <Title>Quality discounts.</Title>
                 <Body>Our developed provider offers high-quality, cost-effective discounts and access to physicians and hospitals throughout the USA.</Body>
             </Badge>
             <Badge className={inView ? 'fade-in' : ''} delay={6}>

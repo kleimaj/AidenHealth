@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { typeScale } from "../utils";
 import { Illustrations } from '../assets';
 import { PrimaryButton } from './Buttons';
-import { Blockquote } from './Blockquote';
+import { Testimonial } from './Testimonial';
 
 const AboutWrapper = styled.article`
     display: flex;
@@ -16,7 +16,7 @@ const AboutWrapper = styled.article`
     position: relative;
     top: 400px;
     width: 100vw;
-    padding: 24px 0;
+    padding: 24px;
     img {
         width: 300px;
         margin: 0;
@@ -54,6 +54,7 @@ font-family: ${props => props.theme.displayFont};
     z-index: 1;
     background-color: #FF6584;
 }
+padding: 12px;
 `
 
 const Body = styled.p`
@@ -101,7 +102,7 @@ const Quotes = styled.div`
 export const About = ({ isMobile }) => {
     return (
         <AboutWrapper>
-            <Header>Who We Are</Header>
+            <Header>Who we are</Header>
             <img 
                 src={Illustrations.Hospital}
                 alt="An illustration of a hospital."
@@ -109,11 +110,11 @@ export const About = ({ isMobile }) => {
             <Body>Aiden Health, founded in 2014, provides health care services designed to meet the unique and changing needs of all we serve.</Body>
             { isMobile ? <PrimaryButton>Learn More</PrimaryButton> : <PrimaryButton modifiers="large">Learn More</PrimaryButton>}
             <Quotes>
-                <Blockquote name={"Uyen Lam"}
+                <Testimonial name={"Uyen Lam"}
                             bio={"Founding partner of Aiden Health"}
                             member={1}
                             content={"A part of the reason we decided to start Aiden Health was to make healthcare more accessible to younger and older individuals."} />
-                <Blockquote />
+                <Testimonial />
             </Quotes>
         </AboutWrapper>
     );

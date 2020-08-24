@@ -281,7 +281,7 @@ const Button = styled.button`
     border-radius: 20px;
     min-width: 140px;
     cursor: pointer;
-    font-family: "Work Sans", sans-serif;
+    font-family: ${props => props.theme.primaryFont};
     transition: background-color 0.2s linear, color 0.2s linear;
     position: relative;
     z-index: 1;
